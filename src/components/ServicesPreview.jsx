@@ -1,16 +1,16 @@
 import { services } from '../data/services'
 import ServiceCard from './ServiceCard'
 
-function Services() {
+function ServicesPreview() {
   return (
     <section id="services" className="services-section">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Unsere Dienstleistungen</span>
-          <h2>Persönlicher Service in Bern</h2>
+          <span className="eyebrow">Dienstleistungen</span>
+          <h2>Alles, was Ramiro mit den Händen macht</h2>
           <p>
-            Wir helfen dort, wo im Alltag praktische Unterstützung gefragt ist.
-            Klar, unkompliziert und mit direktem Kontakt.
+            Praktische Unterstützung für Haus, Garten, Reinigung, Umzug und
+            weitere Arbeiten in Bern und Umgebung.
           </p>
         </div>
 
@@ -24,4 +24,4 @@ function Services() {
   )
 }
 
-export default Services
+export default ServicesPreview

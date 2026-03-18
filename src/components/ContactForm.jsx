@@ -1,16 +1,16 @@
 function ContactForm() {
   return (
-    <section id="kontakt" className="contact-section">
+    <section className="contact-section">
       <div className="container contact-grid">
-        <div className="contact-info">
-          <p className="section-kicker">Kontakt</p>
+        <div className="contact-copy">
+          <span className="eyebrow">Kontakt</span>
           <h2>Jetzt unverbindlich anfragen</h2>
           <p>
-            Schreiben Sie uns für eine Offerte oder rufen Sie direkt an. Wir
-            helfen Ihnen gerne weiter und melden uns so schnell wie möglich.
+            Schreiben Sie uns oder rufen Sie direkt an. Wir melden uns so
+            schnell wie möglich.
           </p>
 
-          <div className="contact-list">
+          <div className="contact-details">
             <p>
               <strong>Name:</strong> Ramiro Amaya
             </p>
@@ -32,7 +32,7 @@ function ContactForm() {
           <input type="text" placeholder="Gewünschter Service" />
           <textarea rows="6" placeholder="Nachricht"></textarea>
 
-          <button type="submit" className="btn btn-primary btn-full">
+          <button type="submit" className="button button-dark button-full">
             Anfrage senden
           </button>
         </form>

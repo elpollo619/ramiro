@@ -1,20 +1,27 @@
-function Footer() {
-  return (
-    <footer className="footer">
-      <div className="container footer-inner">
-        <div>
-          <h3>Amaya Allroundservice Bern</h3>
-          <p>Reinigung, Gartenservice, Umzug & Catering</p>
-        </div>
+import { NavLink } from 'react-router-dom'
 
-        <div>
-          <p>Bern und Umgebung</p>
-          <p>info@amaya-allroundservice.ch</p>
-          <p>+41 00 000 00 00</p>
-        </div>
+function Navbar() {
+  return (
+    <header className="site-header">
+      <div className="container navbar">
+        <NavLink to="/" className="brand">
+          <span className="brand-main">Amaya</span>
+          <span className="brand-sub">Allroundservice Bern</span>
+        </NavLink>
+
+        <nav className="nav">
+          <NavLink to="/ueber-ramiro">Über Ramiro</NavLink>
+          <NavLink to="/dienstleistungen">Dienstleistungen</NavLink>
+          <NavLink to="/catering">Catering</NavLink>
+          <NavLink to="/kontakt">Kontakt</NavLink>
+        </nav>
+
+        <a href="tel:+41000000000" className="button button-dark">
+          Jetzt anrufen
+        </a>
       </div>
-    </footer>
+    </header>
   )
 }
 
-export default Footer
+export default Navbar

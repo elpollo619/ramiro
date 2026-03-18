@@ -1,20 +1,24 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import ContactForm from './components/ContactForm'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ServicesPage from './pages/ServicesPage'
+import ServiceDetailPage from './pages/ServiceDetailPage'
+import CateringPage from './pages/CateringPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <ContactForm />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="ueber-ramiro" element={<AboutPage />} />
+        <Route path="dienstleistungen" element={<ServicesPage />} />
+        <Route path="dienstleistungen/:serviceSlug" element={<ServiceDetailPage />} />
+        <Route path="catering" element={<CateringPage />} />
+        <Route path="kontakt" element={<ContactPage />} />
+      </Route>
+    </Routes>
   )
 }
 

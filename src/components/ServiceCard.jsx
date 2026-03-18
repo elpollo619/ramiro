@@ -1,15 +1,21 @@
+import { Link } from 'react-router-dom'
+
 function ServiceCard({ service }) {
   return (
-    <article className="service-card">
-      <div className="service-image-wrap">
-        <img src={service.image} alt={service.title} />
-      </div>
+    <Link to={`/dienstleistungen/${service.slug}`} className="service-card-link">
+      <article className="service-card">
+        <div className="service-image">
+          <img src={service.image} alt={service.title} />
+        </div>
 
-      <div className="service-card-content">
-        <h3>{service.title}</h3>
-        <p>{service.description}</p>
-      </div>
-    </article>
+        <div className="service-body">
+          <h3>{service.title}</h3>
+          <p>{service.shortDescription}</p>
+
+          <span className="service-more">Mehr erfahren</span>
+        </div>
+      </article>
+    </Link>
   )
 }
 
