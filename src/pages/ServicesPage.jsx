@@ -1,20 +1,37 @@
+import { Link } from 'react-router-dom'
 import { services } from '../data/services'
-import ServiceCard from '../components/ServiceCard'
 
 function ServicesPage() {
   return (
-    <section className="page-section">
+    <section className="services-modern-page">
       <div className="container">
-        <span className="eyebrow">Dienstleistungen</span>
-        <h1 className="page-title">Alles, was Ramiro mit den Händen macht</h1>
+        <div className="modern-page-head">
+          <span className="modern-kicker">Dienstleistungen</span>
+          <h1>Meine Dienstleistungen im Überblick</h1>
+          <p>
+            Persönliche Unterstützung in Bern und Umgebung für Reinigung,
+            Fenster, Treppen, Garten, Umzüge und grössere Arbeiten.
+          </p>
+        </div>
 
-        <p className="page-intro">
-          Praktische Unterstützung für Haus, Garten, Reinigung, Umzug und weitere Arbeiten in Bern und Umgebung.
-        </p>
-
-        <div className="services-grid">
+        <div className="modern-services-grid">
           {services.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+            <Link
+              key={service.slug}
+              to={`/dienstleistungen/${service.slug}`}
+              className="modern-service-card"
+            >
+              <div className="modern-service-card-top">
+                <span className="modern-service-badge">Service</span>
+              </div>
+
+              <h2>{service.title}</h2>
+              <p>{service.shortText}</p>
+
+              <div className="modern-service-link">
+                Mehr erfahren <span>→</span>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

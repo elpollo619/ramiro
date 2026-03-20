@@ -1,74 +1,121 @@
 export const services = [
   {
-    id: 1,
-    slug: 'reinigung',
-    title: 'Reinigung',
-    shortDescription:
-      'Wohnungsreinigung, Büroreinigung und allgemeine Reinigungsarbeiten für Haushalte und kleine Unternehmen.',
-    image:
-      'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
+    slug: 'allgemeine-reinigung',
+    title: 'Allgemeine Reinigung',
+    shortText:
+      'Reinigung für Wohnungen, Büros und Lokale mit Sorgfalt, Ordnung und persönlichem Einsatz.',
     intro:
-      'Ramiro unterstützt bei verschiedenen Reinigungsarbeiten in Bern und Umgebung. Dazu gehören private Haushalte, kleinere Büros und allgemeine Unterstützung bei sauberen und gepflegten Räumen.',
-    details: [
-      'Wohnungsreinigung',
-      'Büroreinigung',
-      'Regelmässige Reinigungsarbeiten',
-      'Einmalige Reinigungen nach Absprache',
-      'Saubere und zuverlässige Arbeitsweise',
+      'Ich kümmere mich persönlich um die Reinigung Ihres Hauses, Büros oder Lokals. Mein Ziel ist, dass alles sauber, ordentlich und angenehm bleibt.',
+    benefitsTitle: 'Warum ist dieser Service wichtig?',
+    benefits: [
+      'Ein sauberer Raum vermittelt Ordnung und Wohlbefinden.',
+      'Regelmässige Reinigung hilft, den Wert von Wohnung oder Geschäft zu erhalten.',
+      'Saubere Räume hinterlassen einen besseren Eindruck bei Familie, Gästen oder Kunden.',
     ],
+    includes: [
+      'Tiefenreinigung',
+      'Regelmässige Reinigung',
+      'Büros und Wohnungen',
+      'Reinigung nach dem Umzug',
+    ],
+    closing:
+      'Ich arbeite sorgfältig und mit viel Einsatz, damit alles sauber und ordentlich bleibt. Sie können auf mich zählen, wenn Sie einen seriösen und vertrauensvollen Service suchen.',
   },
   {
-    id: 2,
-    slug: 'gartenservice',
-    title: 'Gartenservice',
-    shortDescription:
-      'Rasen mähen, Gartenpflege, Rückschnitt und praktische Unterstützung rund ums Haus.',
-    image:
-      'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80',
+    slug: 'fensterreinigung',
+    title: 'Fensterreinigung',
+    shortText:
+      'Saubere Fenster für mehr Licht, bessere Sicht und ein gepflegtes Erscheinungsbild.',
     intro:
-      'Ramiro hilft bei verschiedenen Gartenarbeiten für private Kunden. Ziel ist ein gepflegter, sauberer und praktischer Gartenservice nach Bedarf.',
-    details: [
-      'Rasen mähen',
-      'Gartenpflege',
-      'Rückschnitt',
-      'Laub und allgemeine Gartenarbeiten',
-      'Praktische Hilfe rund ums Haus',
+      'Ich reinige Ihre Fenster, damit sie transparent und ohne Spuren bleiben. Ich arbeite sorgfältig und achte darauf, dass das Ergebnis wirklich sauber aussieht.',
+    benefitsTitle: 'Warum ist Fensterreinigung wichtig?',
+    benefits: [
+      'Saubere Fenster lassen mehr Licht in Ihre Räume.',
+      'Fenster ohne Spuren wirken gepflegt und professionell.',
+      'Sie verbessern das Gesamtbild von Haus, Wohnung oder Geschäft.',
     ],
+    includes: ['Innen und aussen', 'Detaillierte Arbeit', 'Professionelles Ergebnis'],
+    closing:
+      'Ich achte darauf, dass jedes Fenster wirklich sauber ist. Mehr Licht und ein besseres Bild für Ihren Raum.',
   },
   {
-    id: 3,
-    slug: 'umzug-transport',
-    title: 'Umzug & Transport',
-    shortDescription:
-      'Unterstützung bei Umzügen, Möbeltransport und Hilfe beim Wohnungswechsel in Bern und Umgebung.',
-    image:
-      'https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&w=1200&q=80',
+    slug: 'treppenreinigung',
+    title: 'Treppenreinigung',
+    shortText:
+      'Saubere Treppenhäuser und Eingänge für einen gepflegten ersten Eindruck im Gebäude.',
     intro:
-      'Ramiro hilft bei praktischen Arbeiten rund um den Umzug. Dazu gehören Transport, Tragen, Unterstützung beim Wohnungswechsel und allgemeine Hilfe nach Absprache.',
-    details: [
-      'Hilfe bei Umzügen',
-      'Möbeltransport',
-      'Unterstützung beim Wohnungswechsel',
-      'Praktische Hilfe beim Ein- und Ausladen',
-      'Flexibler Einsatz nach Bedarf',
+      'Ich übernehme die Reinigung von Treppenhäusern in Gebäuden und achte dabei auf jedes Detail. So bleiben Eingänge und Gemeinschaftsbereiche ordentlich und angenehm.',
+    benefitsTitle: 'Warum ist Treppenreinigung wichtig?',
+    benefits: [
+      'Der Eingangsbereich ist der erste Eindruck eines Gebäudes.',
+      'Saubere Treppen und Geländer wirken gepflegt und sicher.',
+      'Regelmässige Reinigung verbessert das gesamte Erscheinungsbild des Hauses.',
     ],
+    includes: [
+      'Böden und Geländer',
+      'Eingänge und Gemeinschaftsbereiche',
+      'Regelmässiger oder einmaliger Service',
+    ],
+    closing:
+      'Ich arbeite diskret und konstant, damit alles sauber bleibt.',
   },
   {
-    id: 4,
-    slug: 'weitere-hilfe',
-    title: 'Weitere Hilfe',
-    shortDescription:
-      'Praktische Unterstützung bei verschiedenen Arbeiten rund um Haus und Alltag.',
-    image:
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
+    slug: 'gartenpflege',
+    title: 'Gartenpflege',
+    shortText:
+      'Gepflegte Aussenbereiche mit praktischer Hilfe bei Rasen, Laub und allgemeinem Unterhalt.',
     intro:
-      'Neben den Hauptbereichen kann Ramiro auch bei weiteren praktischen Aufgaben helfen. Am besten direkt anfragen und kurz erklären, welche Unterstützung gebraucht wird.',
-    details: [
-      'Allgemeine praktische Hilfe',
-      'Unterstützung im Alltag',
-      'Arbeiten rund ums Haus',
-      'Flexible Einsätze nach Absprache',
-      'Persönlicher und direkter Kontakt',
+      'Ich übernehme auch Gartenarbeiten, damit Ihr Aussenbereich in gutem Zustand bleibt. Ein gepflegter Garten macht das Zuhause angenehmer und ordentlicher.',
+    benefitsTitle: 'Warum ist Gartenpflege wichtig?',
+    benefits: [
+      'Ein gepflegter Garten gibt Ihrem Haus ein besseres Gesamtbild.',
+      'Regelmässiger Unterhalt spart später grössere Arbeiten.',
+      'Saubere Aussenbereiche schaffen mehr Ruhe und Ordnung.',
     ],
+    includes: ['Rasen mähen', 'Laub reinigen', 'Allgemeiner Unterhalt'],
+    closing:
+      'Ein sauberer und gepflegter Garten – ohne Aufwand für Sie.',
+  },
+  {
+    slug: 'umzugshilfe',
+    title: 'Umzugshilfe',
+    shortText:
+      'Praktische Unterstützung bei Umzügen mit weniger Stress und besserer Organisation.',
+    intro:
+      'Ich helfe Ihnen bei Ihrem Umzug praktisch und schnell. So wird der ganze Ablauf einfacher, ruhiger und besser organisiert.',
+    benefitsTitle: 'Warum ist Umzugshilfe sinnvoll?',
+    benefits: [
+      'Ein Umzug wird schneller und übersichtlicher.',
+      'Sie sparen Zeit und körperliche Belastung.',
+      'Mit Unterstützung läuft der ganze Prozess ruhiger und geordneter ab.',
+    ],
+    includes: [
+      'Transport von Gegenständen',
+      'Unterstützung im Ablauf',
+      'Nachreinigung',
+    ],
+    closing:
+      'Weniger Stress, mehr Ruhe.',
+  },
+  {
+    slug: 'grosse-arbeiten',
+    title: 'Grössere Arbeiten',
+    shortText:
+      'Auch grössere Aufträge sind möglich, weil ich bei Bedarf ein zuverlässiges Team organisiere.',
+    intro:
+      'Wenn ein Auftrag grösser ist, kann ich ein zuverlässiges Team organisieren. So können auch umfangreichere Arbeiten effizient und professionell umgesetzt werden.',
+    benefitsTitle: 'Warum ist das ein Vorteil?',
+    benefits: [
+      'Sie haben nur einen direkten Kontakt für die Organisation.',
+      'Auch grössere Projekte können sauber und effizient umgesetzt werden.',
+      'Sie müssen sich nicht selbst um zusätzliche Helfer kümmern.',
+    ],
+    includes: [
+      'Organisation eines kleinen Teams',
+      'Flexible Unterstützung je nach Auftrag',
+      'Persönliche Koordination',
+    ],
+    closing:
+      'Meine Frau María arbeitet ebenfalls im Reinigungsbereich und hat Erfahrung. Zusätzlich arbeite ich mit vertrauensvollen Kollegen, mit denen ich seit Jahren zusammen bin. So kann ich mich an kleine wie auch an grössere Projekte anpassen.',
   },
 ]

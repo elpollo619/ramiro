@@ -1,15 +1,1 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: white;
-  color: black;
-  font-family: Arial, sans-serif;
-}
-
-#root {
-  width: 100%;
-}
+/* empty on purpose */

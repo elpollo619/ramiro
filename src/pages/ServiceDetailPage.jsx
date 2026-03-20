@@ -7,53 +7,73 @@ function ServiceDetailPage() {
 
   if (!service) {
     return (
-      <section className="page-section">
+      <section className="services-modern-page">
         <div className="container narrow">
-          <span className="eyebrow">Dienstleistungen</span>
-          <h1 className="page-title">Seite nicht gefunden</h1>
-
-          <div className="page-card">
-            <p>Diese Dienstleistung wurde nicht gefunden.</p>
-            <Link to="/dienstleistungen" className="button button-light">
-              Zurück zu den Dienstleistungen
-            </Link>
+          <div className="modern-page-head">
+            <span className="modern-kicker">Dienstleistungen</span>
+            <h1>Seite nicht gefunden</h1>
+            <p>Diese Dienstleistung konnte nicht gefunden werden.</p>
           </div>
+
+          <Link to="/dienstleistungen" className="modern-back-button">
+            Zurück zu den Dienstleistungen
+          </Link>
         </div>
       </section>
     )
   }
 
   return (
-    <section className="page-section">
+    <section className="service-detail-modern">
       <div className="container">
-        <span className="eyebrow">Dienstleistung</span>
-        <h1 className="page-title">{service.title}</h1>
-        <p className="page-intro">{service.intro}</p>
+        <div className="service-detail-hero">
+          <div className="service-detail-copy">
+            <span className="modern-kicker">Dienstleistung</span>
+            <h1>{service.title}</h1>
+            <p>{service.intro}</p>
 
-        <div className="page-card">
-          <img
-            src={service.image}
-            alt={service.title}
-            style={{ borderRadius: '18px', marginBottom: '24px', maxHeight: '420px', objectFit: 'cover' }}
-          />
-
-          <h2>Was dazugehört</h2>
-
-          <ul className="check-list">
-            {service.details.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-
-          <div style={{ marginTop: '24px', display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-            <Link to="/kontakt" className="button button-dark">
-              Jetzt anfragen
-            </Link>
-
-            <Link to="/dienstleistungen" className="button button-light">
-              Zurück zu allen Dienstleistungen
-            </Link>
+            <div className="service-detail-actions">
+              <Link to="/kontakt" className="modern-primary-button">
+                Jetzt anfragen
+              </Link>
+              <Link to="/dienstleistungen" className="modern-secondary-button">
+                Alle Dienstleistungen
+              </Link>
+            </div>
           </div>
+
+          <div className="service-detail-side">
+            <div className="service-highlight-card">
+              <span className="service-highlight-label">Leistung</span>
+              <h3>{service.title}</h3>
+              <p>{service.shortText}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="service-detail-grid">
+          <div className="service-detail-card">
+            <h2>{service.benefitsTitle}</h2>
+            <ul className="modern-list">
+              {service.benefits.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="service-detail-card">
+            <h2>Was ist enthalten?</h2>
+            <ul className="modern-list">
+              {service.includes.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="service-detail-wide-card">
+          <h2>Persönlicher Hinweis</h2>
+          <p>{service.closing}</p>
         </div>
       </div>
     </section>

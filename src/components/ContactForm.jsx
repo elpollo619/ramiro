@@ -4,10 +4,14 @@ function ContactForm() {
       <div className="container contact-grid">
         <div className="contact-copy">
           <span className="eyebrow">Kontakt</span>
-          <h2>Jetzt unverbindlich anfragen</h2>
+          <h2>Kontaktieren Sie mich</h2>
           <p>
-            Schreiben Sie uns oder rufen Sie direkt an. Wir melden uns so
-            schnell wie möglich.
+            Benötigen Sie Hilfe bei Reinigung, Gartenarbeit oder Umzügen?
+          </p>
+
+          <p>
+            Schreiben Sie mir oder rufen Sie mich an. Ich werde Ihnen so
+            schnell wie möglich antworten.
           </p>
 
           <div className="contact-details">

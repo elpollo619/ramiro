@@ -3,42 +3,69 @@ function AboutSection() {
     <section id="about" className="about-section">
       <div className="container about-grid">
         <div className="about-copy">
-          <span className="eyebrow">Über Ramiro</span>
+          <span className="eyebrow">Über mich</span>
 
           <h2>Ramiro Amaya</h2>
 
           <p>
-            Ramiro Amaya ist ein engagierter und vielseitiger Dienstleister in
-            Bern. Er arbeitet gerne praktisch, zuverlässig und mit direktem
-            Kontakt zu den Menschen.
+            Ich heisse Ramiro Amaya und wurde in Tuluá, Valle del Cauca
+            (Kolumbien), geboren, wo ich meine Kindheit und Jugend im Kreise
+            meiner Familie und meiner Wurzeln verbracht habe.
           </p>
 
           <p>
-            Über die Jahre hat er in verschiedenen Bereichen gearbeitet und viel
-            Erfahrung gesammelt – vor allem bei Arbeiten rund ums Haus, bei
-            Reinigungen, Gartenarbeiten, Umzügen und Transporten.
+            Mit 28 Jahren habe ich mich entschieden, einen wichtigen Schritt in
+            meinem Leben zu machen: nach Europa zu migrieren, um eine bessere
+            Zukunft für meine Kinder, Luisa und Cristian, zu suchen. Mein Weg
+            begann in der Schweiz, wo ich hauptsächlich im Bereich Reinigung
+            gearbeitet habe und Erfahrung in der Reinigung von Häusern,
+            Gebäuden und Restaurants gesammelt habe. Von Anfang an habe ich mich
+            durch meine Hingabe, Verantwortung und mein Engagement in jeder
+            Arbeit ausgezeichnet.
           </p>
 
           <p>
-            Neben den handwerklichen und praktischen Dienstleistungen kocht
-            Ramiro auch gerne für Gruppen und Anlässe. Er bereitet hausgemachte
-            Speisen mit viel Sorgfalt zu und bringt gerne kolumbianische und
-            spanische Spezialitäten auf den Tisch.
+            Neben meiner Erfahrung in der Reinigung hatte ich schon immer eine
+            grosse Leidenschaft für das Kochen. Diese Leidenschaft führte mich
+            später nach Spanien, wo ich mehr als 8 Jahre in Castellón de la
+            Plana gelebt habe. Dort habe ich in einem bekannten Restaurant der
+            Stadt gearbeitet, wo ich meine kulinarischen Fähigkeiten
+            weiterentwickelt und mich auf die Zubereitung von Banketten
+            spezialisiert habe. Zu meinen Spezialitäten gehören unter anderem
+            Paellas, die ich mit Erfahrung und Tradition zubereite.
           </p>
 
           <p>
-            Sein Ziel ist es, Menschen in Bern und Umgebung mit ehrlicher,
-            persönlicher und flexibler Hilfe zu unterstützen.
+            Nach der Wirtschaftskrise in Spanien war meine Familie betroffen und
+            ich habe mich entschieden, in die Schweiz zurückzukehren. Dank
+            meiner positiven Einstellung, meiner menschlichen Qualität und
+            meiner Professionalität haben mir frühere Arbeitgeber wieder
+            vertraut und mir neue Arbeitsmöglichkeiten angeboten.
+          </p>
+
+          <p>
+            Heute arbeite ich sowohl für Unternehmen als auch selbstständig und
+            biete Dienstleistungen in den Bereichen Reinigung, Unterhalt,
+            Gartenarbeit, Umzüge und andere allgemeine Arbeiten an. Mein Ziel
+            ist immer dasselbe: saubere, gut gemachte Arbeit mit vollem
+            Vertrauen zu leisten.
+          </p>
+
+          <p>
+            Ausserhalb der Arbeit schätze ich die Zeit mit meiner Familie sehr.
+            Sonntags verbringe ich normalerweise besondere Momente mit meiner
+            Frau und meiner Enkelin und geniesse das, was mir im Leben am
+            wichtigsten ist.
           </p>
         </div>
 
         <div className="about-box">
-          <h3>Was Ramiro auszeichnet</h3>
+          <h3>Was mich auszeichnet</h3>
 
           <ul>
             <li>Persönlicher und direkter Kontakt</li>
             <li>Zuverlässige und saubere Arbeitsweise</li>
-            <li>Praktische Hilfe im Alltag</li>
+            <li>Langjährige Erfahrung in verschiedenen Bereichen</li>
             <li>Flexibel für verschiedene Arbeiten</li>
             <li>Service in Bern und Umgebung</li>
           </ul>

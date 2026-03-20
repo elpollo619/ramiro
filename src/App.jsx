@@ -14,7 +14,10 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="ueber-ramiro" element={<AboutPage />} />
         <Route path="dienstleistungen" element={<ServicesPage />} />
-        <Route path="dienstleistungen/:serviceSlug" element={<ServiceDetailPage />} />
+        <Route
+          path="dienstleistungen/:serviceSlug"
+          element={<ServiceDetailPage />}
+        />
         <Route path="catering" element={<CateringPage />} />
         <Route path="kontakt" element={<ContactPage />} />
       </Route>
