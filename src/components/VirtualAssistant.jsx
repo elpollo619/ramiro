@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import './VirtualAssistant.css'
 
 const WHATSAPP_NUMBER = '41765683445'
+const EMAIL_ADDRESS = 'amayabernservices@gmail.com'
 
 function normalizeText(text) {
   return text
@@ -14,11 +15,12 @@ function getTexts(language) {
   const t = {
     de: {
       assistant: 'Assistent',
-      welcome: 'Hallo 👋 Wie kann ich Ihnen helfen?',
       subtitle: 'Virtueller Assistent',
+      welcome:
+        'Hallo 👋 Wie kann ich Ihnen helfen? Sie können auch das Offertenformular ausfüllen, direkt an amayabernservices@gmail.com schreiben oder per WhatsApp Kontakt aufnehmen.',
       placeholder: 'Ihre Nachricht schreiben...',
       send: 'Senden',
-      budget: 'Offerte anfragen',
+      form: 'Formular öffnen',
       whatsapp: 'WhatsApp öffnen',
       quick1: 'Fensterreinigung',
       quick2: 'Allgemeine Reinigung',
@@ -27,42 +29,37 @@ function getTexts(language) {
       quick5: 'Preise',
       quick6: 'Bern und Umgebung',
       fallback:
-        'Gerne helfe ich Ihnen weiter. Schreiben Sie mir bitte kurz, welche Dienstleistung Sie brauchen und in welcher Region Sie sich befinden.',
+        'Gerne helfe ich Ihnen weiter. Sie können das Offertenformular ausfüllen, direkt an amayabernservices@gmail.com schreiben oder per WhatsApp Kontakt aufnehmen.',
       windows:
-        'Ramiro bietet Fensterreinigung innen und aussen an. Die Arbeit wird sorgfältig und streifenfrei ausgeführt.',
+        'Ramiro bietet Fensterreinigung innen und aussen an. Für eine passende Offerte können Sie direkt das Formular ausfüllen.',
       general:
-        'Die allgemeine Reinigung umfasst Wohnungen, Häuser, Büros und Lokale. Ramiro arbeitet direkt, sauber und zuverlässig.',
+        'Die allgemeine Reinigung umfasst Wohnungen, Häuser, Büros und Lokale. Mit dem Formular können Sie alle Angaben direkt senden.',
       stairs:
-        'Treppenreinigung ist möglich für Eingänge, Böden, Geländer und gemeinschaftliche Bereiche.',
+        'Treppenreinigung ist möglich für Eingänge, Böden, Geländer und gemeinschaftliche Bereiche. Für eine Offerte können Sie direkt das Formular ausfüllen.',
       garden:
-        'Ramiro unterstützt auch bei Gartenpflege und allgemeinen Arbeiten im Aussenbereich.',
+        'Ramiro hilft auch bei Gartenpflege und allgemeinen Arbeiten im Aussenbereich. Schreiben Sie uns auch gerne per E-Mail oder WhatsApp.',
       moving:
-        'Bei Umzügen hilft Ramiro praktisch und zuverlässig beim Ablauf, Transport und bei weiteren Arbeiten rund um den Umzug.',
+        'Bei Umzügen hilft Ramiro praktisch und zuverlässig. Im Formular können Sie alle wichtigen Angaben für eine Offerte angeben.',
       catering:
-        'Ramiro bietet Catering und hausgemachte Paellas für Familienfeiern, kleine Events und besondere Anlässe an.',
+        'Ramiro bietet Catering und hausgemachte Paellas für Familienfeiern, kleine Events und besondere Anlässe an. Sie können direkt das Formular ausfüllen oder per WhatsApp schreiben.',
       zone:
-        'Der Service ist in Bern und Umgebung verfügbar. Sie können Ihre Ortschaft gerne schreiben, damit wir prüfen können, ob der Einsatz möglich ist.',
+        'Der Service ist in Bern und Umgebung verfügbar. Schreiben Sie uns Ihre Ortschaft oder füllen Sie direkt das Formular aus.',
       contact:
-        'Sie können direkt Kontakt aufnehmen über das Kontaktformular, per WhatsApp oder telefonisch. Wenn Sie möchten, können Sie mir auch gleich Ihren Namen, Ort und die gewünschte Dienstleistung schreiben.',
+        'Sie können das Formular ausfüllen, direkt an amayabernservices@gmail.com schreiben oder per WhatsApp an +41 76 568 34 45 Kontakt aufnehmen.',
       price:
-        'Die Offerte ist unverbindlich. Der Preis hängt von der Art der Arbeit, der Grösse und dem Aufwand ab.',
-      team:
-        'Auch grössere Arbeiten sind möglich. Falls nötig, kann Ramiro ein zuverlässiges Team organisieren.',
-      askData:
-        'Damit ich Ihre Anfrage besser vorbereiten kann, schreiben Sie bitte: Name, Ort, gewünschte Dienstleistung und gewünschtes Datum.',
-      budgetPrefill:
-        'Hallo, ich möchte gerne eine unverbindliche Offerte anfragen.',
+        'Die Offerte ist unverbindlich. Der Preis hängt von der Art der Arbeit, der Grösse und dem Aufwand ab. Am besten füllen Sie das Formular mit allen Angaben aus.',
       whatsappPrefill:
         'Hallo, ich interessiere mich für Ihre Dienstleistungen.',
     },
 
     es: {
       assistant: 'Asistente',
-      welcome: 'Hola 👋 ¿En qué puedo ayudarle?',
       subtitle: 'Asistente virtual',
+      welcome:
+        'Hola 👋 ¿En qué puedo ayudarle? También puede rellenar el formulario de presupuesto, escribir directamente a amayabernservices@gmail.com o contactar por WhatsApp.',
       placeholder: 'Escriba su mensaje...',
       send: 'Enviar',
-      budget: 'Solicitar presupuesto',
+      form: 'Abrir formulario',
       whatsapp: 'Abrir WhatsApp',
       quick1: 'Limpieza de ventanas',
       quick2: 'Limpieza general',
@@ -71,42 +68,37 @@ function getTexts(language) {
       quick5: 'Precios',
       quick6: 'Berna y alrededores',
       fallback:
-        'Con gusto le ayudo. Escríbame qué servicio necesita y en qué zona se encuentra.',
+        'Con gusto le ayudo. Puede rellenar el formulario, escribir directamente a amayabernservices@gmail.com o enviarnos un WhatsApp.',
       windows:
-        'Ramiro ofrece limpieza de ventanas por dentro y por fuera, con cuidado y sin marcas.',
+        'Ramiro ofrece limpieza de ventanas por dentro y por fuera. Para una oferta adecuada puede rellenar directamente el formulario.',
       general:
-        'La limpieza general incluye viviendas, casas, oficinas y locales. Ramiro trabaja de forma directa, limpia y fiable.',
+        'La limpieza general incluye viviendas, casas, oficinas y locales. Con el formulario puede enviar toda la información necesaria.',
       stairs:
-        'La limpieza de escaleras incluye entradas, suelos, barandillas y zonas comunes.',
+        'La limpieza de escaleras incluye entradas, suelos, barandillas y zonas comunes. Para una oferta puede rellenar directamente el formulario.',
       garden:
-        'Ramiro también ayuda con jardinería y trabajos generales en espacios exteriores.',
+        'Ramiro también ayuda con jardinería y trabajos generales en espacios exteriores. También puede escribirnos por correo o WhatsApp.',
       moving:
-        'En mudanzas, Ramiro ofrece ayuda práctica y fiable con el proceso, transporte y otras tareas relacionadas.',
+        'En mudanzas, Ramiro ofrece ayuda práctica y fiable. En el formulario puede indicar todos los datos importantes para la oferta.',
       catering:
-        'Ramiro ofrece catering y paellas caseras para reuniones familiares, pequeños eventos y ocasiones especiales.',
+        'Ramiro ofrece catering y paellas caseras para reuniones familiares, pequeños eventos y ocasiones especiales. Puede rellenar el formulario o escribir por WhatsApp.',
       zone:
-        'El servicio está disponible en Berna y alrededores. Puede escribir su localidad para comprobar si el servicio es posible.',
+        'El servicio está disponible en Berna y alrededores. Puede escribirnos su localidad o rellenar directamente el formulario.',
       contact:
-        'Puede contactar directamente por el formulario de la web, por WhatsApp o por teléfono. Si quiere, también puede escribirme su nombre, la zona y el servicio que necesita.',
+        'Puede rellenar el formulario, escribir directamente a amayabernservices@gmail.com o contactar por WhatsApp al +41 76 568 34 45.',
       price:
-        'El presupuesto es sin compromiso. El precio depende del tipo de trabajo, el tamaño y el esfuerzo necesario.',
-      team:
-        'También es posible realizar trabajos grandes. Si hace falta, Ramiro puede organizar un equipo de confianza.',
-      askData:
-        'Para preparar mejor su solicitud, escriba por favor: nombre, localidad, servicio deseado y fecha aproximada.',
-      budgetPrefill:
-        'Hola, me gustaría solicitar un presupuesto sin compromiso.',
+        'El presupuesto es sin compromiso. El precio depende del tipo de trabajo, el tamaño y el esfuerzo necesario. Lo mejor es rellenar el formulario con toda la información.',
       whatsappPrefill:
         'Hola, estoy interesado en sus servicios.',
     },
 
     pt: {
       assistant: 'Assistente',
-      welcome: 'Olá 👋 Em que posso ajudar?',
       subtitle: 'Assistente virtual',
+      welcome:
+        'Olá 👋 Em que posso ajudar? Também pode preencher o formulário de orçamento, escrever directamente para amayabernservices@gmail.com ou contactar por WhatsApp.',
       placeholder: 'Escreva a sua mensagem...',
       send: 'Enviar',
-      budget: 'Pedir orçamento',
+      form: 'Abrir formulário',
       whatsapp: 'Abrir WhatsApp',
       quick1: 'Limpeza de janelas',
       quick2: 'Limpeza geral',
@@ -115,131 +107,116 @@ function getTexts(language) {
       quick5: 'Preços',
       quick6: 'Berna e arredores',
       fallback:
-        'Com todo o gosto ajudo. Escreva qual o serviço que precisa e em que zona se encontra.',
+        'Com todo o gosto ajudo. Pode preencher o formulário, escrever directamente para amayabernservices@gmail.com ou mandar mensagem por WhatsApp.',
       windows:
-        'O Ramiro oferece limpeza de janelas por dentro e por fora, com cuidado e sem marcas.',
+        'O Ramiro oferece limpeza de janelas por dentro e por fora. Para um orçamento adequado, pode preencher directamente o formulário.',
       general:
-        'A limpeza geral inclui apartamentos, casas, escritórios e espaços comerciais. O Ramiro trabalha de forma directa, limpa e fiável.',
+        'A limpeza geral inclui apartamentos, casas, escritórios e espaços comerciais. Com o formulário pode enviar toda a informação necessária.',
       stairs:
-        'A limpeza de escadas inclui entradas, pisos, corrimões e zonas comuns.',
+        'A limpeza de escadas inclui entradas, pisos, corrimões e zonas comuns. Para um orçamento, pode preencher directamente o formulário.',
       garden:
-        'O Ramiro também ajuda com jardinagem e trabalhos gerais em espaços exteriores.',
+        'O Ramiro também ajuda com jardinagem e trabalhos gerais em espaços exteriores. Também pode escrever por e-mail ou WhatsApp.',
       moving:
-        'Nas mudanças, o Ramiro oferece apoio prático e fiável com o processo, transporte e outras tarefas relacionadas.',
+        'Nas mudanças, o Ramiro oferece apoio prático e fiável. No formulário pode indicar todos os dados importantes para o orçamento.',
       catering:
-        'O Ramiro oferece catering e paellas caseiras para festas de família, pequenos eventos e ocasiões especiais.',
+        'O Ramiro oferece catering e paellas caseiras para festas de família, pequenos eventos e ocasiões especiais. Pode preencher o formulário ou escrever por WhatsApp.',
       zone:
-        'O serviço está disponível em Berna e arredores. Pode escrever a sua localidade para verificar se o serviço é possível.',
+        'O serviço está disponível em Berna e arredores. Pode escrever a sua localidade ou preencher directamente o formulário.',
       contact:
-        'Pode entrar em contacto directamente pelo formulário do site, por WhatsApp ou por telefone. Se quiser, também pode escrever o seu nome, a zona e o serviço que precisa.',
+        'Pode preencher o formulário, escrever directamente para amayabernservices@gmail.com ou contactar pelo WhatsApp para +41 76 568 34 45.',
       price:
-        'O orçamento é sem compromisso. O preço depende do tipo de trabalho, do tamanho e do esforço necessário.',
-      team:
-        'Também são possíveis trabalhos maiores. Se for necessário, o Ramiro pode organizar uma equipa de confiança.',
-      askData:
-        'Para preparar melhor o seu pedido, escreva por favor: nome, localidade, serviço desejado e data aproximada.',
-      budgetPrefill:
-        'Olá, gostaria de pedir um orçamento sem compromisso.',
+        'O orçamento é sem compromisso. O preço depende do tipo de trabalho, do tamanho e do esforço necessário. O melhor é preencher o formulário com toda a informação.',
       whatsappPrefill:
         'Olá, estou interessado nos seus serviços.',
     },
 
     en: {
       assistant: 'Assistant',
-      welcome: 'Hello 👋 How can I help?',
       subtitle: 'Virtual assistant',
+      welcome:
+        'Hello 👋 How can I help you? You can also fill out the quote form, write directly to amayabernservices@gmail.com or contact us on WhatsApp.',
       placeholder: 'Write your message...',
       send: 'Send',
-      budget: 'Request quote',
+      form: 'Open form',
       whatsapp: 'Open WhatsApp',
       quick1: 'Window cleaning',
       quick2: 'General cleaning',
       quick3: 'Catering / Paella',
       quick4: 'Contact',
       quick5: 'Prices',
-      quick6: 'Bern and nearby areas',
+      quick6: 'Bern and surrounding area',
       fallback:
-        'I am happy to help. Please tell me which service you need and in which area you are located.',
+        'I will gladly help you. You can fill out the quote form, write directly to amayabernservices@gmail.com or contact us on WhatsApp.',
       windows:
-        'Ramiro offers window cleaning inside and outside, with care and a streak-free result.',
+        'Ramiro offers window cleaning inside and outside. For a suitable quote, you can fill out the form directly.',
       general:
-        'General cleaning includes flats, houses, offices and business spaces. Ramiro works directly, cleanly and reliably.',
+        'General cleaning includes apartments, houses, offices and commercial spaces. With the form you can send all the necessary information.',
       stairs:
-        'Stair cleaning includes entrances, floors, railings and shared areas.',
+        'Stair cleaning includes entrances, floors, railings and shared areas. For a quote, you can fill out the form directly.',
       garden:
-        'Ramiro also helps with gardening and general outdoor work.',
+        'Ramiro also helps with gardening and general outdoor work. You can also write by email or WhatsApp.',
       moving:
-        'For moving jobs, Ramiro offers practical and reliable support with transport, organization and related tasks.',
+        'For moving jobs, Ramiro offers practical and reliable help. In the form you can include all important details for the quote.',
       catering:
-        'Ramiro offers catering and homemade paellas for family gatherings, small events and special occasions.',
+        'Ramiro offers catering and homemade paellas for family gatherings, small events and special occasions. You can fill out the form or write on WhatsApp.',
       zone:
-        'The service is available in Bern and nearby areas. You can send your town to check whether service is possible there.',
+        'The service is available in Bern and surrounding areas. You can write your location or fill out the form directly.',
       contact:
-        'You can contact us directly through the website form, by WhatsApp or by phone. You can also send me your name, area and the service you need.',
+        'You can fill out the form, write directly to amayabernservices@gmail.com or contact WhatsApp at +41 76 568 34 45.',
       price:
-        'Quotes are free and without obligation. The price depends on the type of work, the size and the effort required.',
-      team:
-        'Larger jobs are also possible. If needed, Ramiro can organize a trusted team.',
-      askData:
-        'To prepare your request better, please write: name, town, desired service and preferred date.',
-      budgetPrefill:
-        'Hello, I would like to request a free quote.',
+        'The quote is non-binding. The price depends on the type of work, the size and the effort required. The best option is to fill out the form with all details.',
       whatsappPrefill:
         'Hello, I am interested in your services.',
     },
 
     fr: {
       assistant: 'Assistant',
-      welcome: 'Bonjour 👋 Comment puis-je vous aider ?',
       subtitle: 'Assistant virtuel',
+      welcome:
+        'Bonjour 👋 Comment puis-je vous aider ? Vous pouvez aussi remplir le formulaire de devis, écrire directement à amayabernservices@gmail.com ou nous contacter par WhatsApp.',
       placeholder: 'Écrivez votre message...',
       send: 'Envoyer',
-      budget: 'Demander un devis',
+      form: 'Ouvrir le formulaire',
       whatsapp: 'Ouvrir WhatsApp',
-      quick1: 'Nettoyage de fenêtres',
+      quick1: 'Nettoyage des fenêtres',
       quick2: 'Nettoyage général',
       quick3: 'Catering / Paella',
       quick4: 'Contact',
       quick5: 'Prix',
       quick6: 'Berne et environs',
       fallback:
-        'Je vous aide volontiers. Écrivez-moi simplement quel service vous souhaitez et dans quelle région vous vous trouvez.',
+        'Je vous aide volontiers. Vous pouvez remplir le formulaire, écrire directement à amayabernservices@gmail.com ou nous contacter par WhatsApp.',
       windows:
-        'Ramiro propose le nettoyage de fenêtres à l’intérieur et à l’extérieur, avec soin et sans traces.',
+        'Ramiro propose le nettoyage des fenêtres à l’intérieur et à l’extérieur. Pour un devis adapté, vous pouvez remplir directement le formulaire.',
       general:
-        'Le nettoyage général comprend appartements, maisons, bureaux et locaux. Ramiro travaille directement, proprement et de manière fiable.',
+        'Le nettoyage général comprend les appartements, maisons, bureaux et locaux. Avec le formulaire, vous pouvez envoyer toutes les informations nécessaires.',
       stairs:
-        'Le nettoyage d’escaliers comprend entrées, sols, rampes et espaces communs.',
+        'Le nettoyage des escaliers comprend les entrées, sols, rampes et espaces communs. Pour un devis, vous pouvez remplir directement le formulaire.',
       garden:
-        'Ramiro aide aussi pour le jardin et les travaux généraux à l’extérieur.',
+        'Ramiro aide aussi pour le jardinage et les travaux généraux à l’extérieur. Vous pouvez aussi écrire par e-mail ou WhatsApp.',
       moving:
-        'Pour les déménagements, Ramiro propose une aide pratique et fiable pour l’organisation, le transport et d’autres tâches liées.',
+        'Pour les déménagements, Ramiro propose une aide pratique et fiable. Dans le formulaire, vous pouvez indiquer tous les détails importants pour le devis.',
       catering:
-        'Ramiro propose du catering et des paellas maison pour fêtes de famille, petits événements et occasions spéciales.',
+        'Ramiro propose du catering et des paellas maison pour les fêtes de famille, petits événements et occasions spéciales. Vous pouvez remplir le formulaire ou écrire sur WhatsApp.',
       zone:
-        'Le service est disponible à Berne et dans les environs. Vous pouvez écrire votre localité pour vérifier si le service est possible.',
+        'Le service est disponible à Berne et dans les environs. Vous pouvez nous indiquer votre localité ou remplir directement le formulaire.',
       contact:
-        'Vous pouvez nous contacter directement via le formulaire du site, par WhatsApp ou par téléphone. Si vous voulez, vous pouvez aussi m’écrire votre nom, la région et le service souhaité.',
+        'Vous pouvez remplir le formulaire, écrire directement à amayabernservices@gmail.com ou contacter WhatsApp au +41 76 568 34 45.',
       price:
-        'Le devis est sans engagement. Le prix dépend du type de travail, de la taille et de l’effort nécessaire.',
-      team:
-        'Les grands travaux sont aussi possibles. Si nécessaire, Ramiro peut organiser une équipe de confiance.',
-      askData:
-        'Pour mieux préparer votre demande, veuillez écrire : nom, localité, service souhaité et date souhaitée.',
-      budgetPrefill:
-        'Bonjour, je voudrais demander un devis sans engagement.',
+        'Le devis est sans engagement. Le prix dépend du type de travail, de la taille et du temps nécessaire. Le mieux est de remplir le formulaire avec toutes les informations.',
       whatsappPrefill:
         'Bonjour, je suis intéressé par vos services.',
     },
 
     it: {
       assistant: 'Assistente',
-      welcome: 'Ciao 👋 Come posso aiutarla?',
       subtitle: 'Assistente virtuale',
+      welcome:
+        'Ciao 👋 Come posso aiutarla? Può anche compilare il modulo di preventivo, scrivere direttamente a amayabernservices@gmail.com oppure contattarci su WhatsApp.',
       placeholder: 'Scriva il suo messaggio...',
-      send: 'Invia',
-      budget: 'Richiedi preventivo',
-      whatsapp: 'Apri WhatsApp',
+      send: 'Inviare',
+      form: 'Aprire modulo',
+      whatsapp: 'Aprire WhatsApp',
       quick1: 'Pulizia finestre',
       quick2: 'Pulizia generale',
       quick3: 'Catering / Paella',
@@ -247,31 +224,25 @@ function getTexts(language) {
       quick5: 'Prezzi',
       quick6: 'Berna e dintorni',
       fallback:
-        'Sarò felice di aiutarla. Mi scriva quale servizio desidera e in quale zona si trova.',
+        'La aiuto volentieri. Può compilare il modulo, scrivere direttamente a amayabernservices@gmail.com oppure contattarci su WhatsApp.',
       windows:
-        'Ramiro offre la pulizia delle finestre interne ed esterne, con cura e senza aloni.',
+        'Ramiro offre pulizia finestre interna ed esterna. Per un preventivo adatto, può compilare direttamente il modulo.',
       general:
-        'La pulizia generale comprende appartamenti, case, uffici e locali. Ramiro lavora in modo diretto, pulito e affidabile.',
+        'La pulizia generale include appartamenti, case, uffici e locali commerciali. Con il modulo può inviare tutte le informazioni necessarie.',
       stairs:
-        'La pulizia delle scale comprende ingressi, pavimenti, corrimani e spazi comuni.',
+        'La pulizia scale include ingressi, pavimenti, corrimano e aree comuni. Per un preventivo può compilare direttamente il modulo.',
       garden:
-        'Ramiro aiuta anche con il giardino e con lavori generali negli spazi esterni.',
+        'Ramiro aiuta anche con giardinaggio e lavori generali esterni. Può anche scriverci via e-mail o WhatsApp.',
       moving:
-        'Per i traslochi, Ramiro offre un aiuto pratico e affidabile con organizzazione, trasporto e altre attività collegate.',
+        'Per i traslochi, Ramiro offre un aiuto pratico e affidabile. Nel modulo può indicare tutti i dettagli importanti per il preventivo.',
       catering:
-        'Ramiro offre catering e paella fatta in casa per feste di famiglia, piccoli eventi e occasioni speciali.',
+        'Ramiro offre catering e paelle fatte in casa per feste di famiglia, piccoli eventi e occasioni speciali. Può compilare il modulo oppure scrivere su WhatsApp.',
       zone:
-        'Il servizio è disponibile a Berna e dintorni. Può scrivere la sua località per verificare se il servizio è disponibile.',
+        'Il servizio è disponibile a Berna e dintorni. Può indicarci la sua località oppure compilare direttamente il modulo.',
       contact:
-        'Può contattarci direttamente tramite il modulo del sito, via WhatsApp o per telefono. Se vuole, può anche scrivermi il suo nome, la zona e il servizio desiderato.',
+        'Può compilare il modulo, scrivere direttamente a amayabernservices@gmail.com oppure contattare WhatsApp al +41 76 568 34 45.',
       price:
-        'Il preventivo è senza impegno. Il prezzo dipende dal tipo di lavoro, dalla dimensione e dall’impegno richiesto.',
-      team:
-        'Sono possibili anche lavori più grandi. Se necessario, Ramiro può organizzare un team affidabile.',
-      askData:
-        'Per preparare meglio la sua richiesta, scriva per favore: nome, località, servizio desiderato e data indicativa.',
-      budgetPrefill:
-        'Ciao, vorrei richiedere un preventivo senza impegno.',
+        'Il preventivo è senza impegno. Il prezzo dipende dal tipo di lavoro, dalle dimensioni e dall’impegno necessario. La cosa migliore è compilare il modulo con tutte le informazioni.',
       whatsappPrefill:
         'Ciao, sono interessato ai vostri servizi.',
     },
@@ -300,12 +271,11 @@ function getAssistantReply(message, language) {
     text.includes('limpieza general') ||
     text.includes('limpeza geral') ||
     text.includes('general cleaning') ||
-    text.includes('nettoyage general') ||
-    text.includes('pulizia generale') ||
+    text.includes('nettoyage') ||
+    text.includes('pulizia') ||
     text.includes('office') ||
     text.includes('oficina') ||
-    text.includes('buro') ||
-    text.includes('bureau')
+    text.includes('buro')
   ) {
     return t.general
   }
@@ -334,7 +304,7 @@ function getAssistantReply(message, language) {
   if (
     text.includes('umzug') ||
     text.includes('mudanza') ||
-    text.includes('mudanca') ||
+    text.includes('mudancas') ||
     text.includes('moving') ||
     text.includes('demenagement') ||
     text.includes('trasloco')
@@ -347,7 +317,7 @@ function getAssistantReply(message, language) {
     text.includes('paella') ||
     text.includes('evento') ||
     text.includes('event') ||
-    text.includes('banquete')
+    text.includes('evenement')
   ) {
     return t.catering
   }
@@ -358,7 +328,8 @@ function getAssistantReply(message, language) {
     text.includes('umgebung') ||
     text.includes('zona') ||
     text.includes('area') ||
-    text.includes('berne')
+    text.includes('environs') ||
+    text.includes('dintorni')
   ) {
     return t.zone
   }
@@ -367,11 +338,11 @@ function getAssistantReply(message, language) {
     text.includes('kontakt') ||
     text.includes('contacto') ||
     text.includes('contact') ||
-    text.includes('contacto') ||
     text.includes('telefone') ||
     text.includes('telefon') ||
     text.includes('email') ||
-    text.includes('correo')
+    text.includes('mail') ||
+    text.includes('contatto')
   ) {
     return t.contact
   }
@@ -381,36 +352,13 @@ function getAssistantReply(message, language) {
     text.includes('price') ||
     text.includes('precio') ||
     text.includes('preco') ||
-    text.includes('prix') ||
-    text.includes('prezzo') ||
     text.includes('offerte') ||
     text.includes('presupuesto') ||
     text.includes('orcamento') ||
-    text.includes('devis') ||
+    text.includes('prix') ||
     text.includes('preventivo')
   ) {
     return t.price
-  }
-
-  if (
-    text.includes('gross') ||
-    text.includes('gros') ||
-    text.includes('grande') ||
-    text.includes('team') ||
-    text.includes('equipe')
-  ) {
-    return t.team
-  }
-
-  if (
-    text.includes('anfrage') ||
-    text.includes('solicitud') ||
-    text.includes('pedido') ||
-    text.includes('request') ||
-    text.includes('devis') ||
-    text.includes('preventivo')
-  ) {
-    return t.askData
   }
 
   return t.fallback
@@ -421,12 +369,14 @@ function VirtualAssistant({ language = 'de' }) {
 
   const [isOpen, setIsOpen] = useState(false)
   const [input, setInput] = useState('')
-  const [messages, setMessages] = useState([])
+  const [messages, setMessages] = useState(() => [
+    { sender: 'assistant', text: t.welcome },
+  ])
 
-  useEffect(() => {
+  const resetChatForLanguage = () => {
     setMessages([{ sender: 'assistant', text: t.welcome }])
     setInput('')
-  }, [language, t.welcome])
+  }
 
   const handleSend = (customText) => {
     const finalText = (customText || input).trim()
@@ -443,8 +393,8 @@ function VirtualAssistant({ language = 'de' }) {
     setInput('')
   }
 
-  const openWhatsapp = (prefill) => {
-    const text = encodeURIComponent(prefill)
+  const openWhatsapp = () => {
+    const text = encodeURIComponent(t.whatsappPrefill)
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank')
   }
 
@@ -454,8 +404,10 @@ function VirtualAssistant({ language = 'de' }) {
         className="va-fab"
         onClick={() => setIsOpen((prev) => !prev)}
         aria-label={t.assistant}
+        type="button"
       >
         <span className="va-fab-icon">💬</span>
+        <span>{t.assistant}</span>
       </button>
 
       {isOpen && (
@@ -466,28 +418,24 @@ function VirtualAssistant({ language = 'de' }) {
               <p>{t.subtitle}</p>
             </div>
 
-            <button
-              className="va-close"
-              onClick={() => setIsOpen(false)}
-              aria-label="Close"
-            >
+            <button className="va-close" onClick={() => setIsOpen(false)} type="button">
               ×
             </button>
           </div>
 
           <div className="va-quick-actions">
-            <button onClick={() => handleSend(t.quick1)}>{t.quick1}</button>
-            <button onClick={() => handleSend(t.quick2)}>{t.quick2}</button>
-            <button onClick={() => handleSend(t.quick3)}>{t.quick3}</button>
-            <button onClick={() => handleSend(t.quick4)}>{t.quick4}</button>
-            <button onClick={() => handleSend(t.quick5)}>{t.quick5}</button>
-            <button onClick={() => handleSend(t.quick6)}>{t.quick6}</button>
+            <button type="button" onClick={() => handleSend(t.quick1)}>{t.quick1}</button>
+            <button type="button" onClick={() => handleSend(t.quick2)}>{t.quick2}</button>
+            <button type="button" onClick={() => handleSend(t.quick3)}>{t.quick3}</button>
+            <button type="button" onClick={() => handleSend(t.quick4)}>{t.quick4}</button>
+            <button type="button" onClick={() => handleSend(t.quick5)}>{t.quick5}</button>
+            <button type="button" onClick={() => handleSend(t.quick6)}>{t.quick6}</button>
           </div>
 
           <div className="va-messages">
             {messages.map((msg, index) => (
               <div
-                key={index}
+                key={`${msg.sender}-${index}`}
                 className={`va-message ${msg.sender === 'user' ? 'user' : 'assistant'}`}
               >
                 {msg.text}
@@ -496,18 +444,32 @@ function VirtualAssistant({ language = 'de' }) {
           </div>
 
           <div className="va-cta-row">
-            <button
-              className="va-budget"
-              onClick={() => openWhatsapp(t.budgetPrefill)}
-            >
-              {t.budget}
+            <a className="va-budget" href="/offerte">
+              {t.form}
+            </a>
+
+            <button className="va-whatsapp" onClick={openWhatsapp} type="button">
+              {t.whatsapp}
             </button>
 
-            <button
-              className="va-whatsapp"
-              onClick={() => openWhatsapp(t.whatsappPrefill)}
-            >
-              {t.whatsapp}
+            <a className="va-email" href={`mailto:${EMAIL_ADDRESS}`}>
+              E-Mail
+            </a>
+          </div>
+
+          <div className="va-language-reset">
+            <button type="button" onClick={resetChatForLanguage}>
+              {language === 'es'
+                ? 'Actualizar idioma del chat'
+                : language === 'pt'
+                  ? 'Actualizar idioma do chat'
+                  : language === 'en'
+                    ? 'Refresh chat language'
+                    : language === 'fr'
+                      ? 'Actualiser la langue du chat'
+                      : language === 'it'
+                        ? 'Aggiorna lingua chat'
+                        : 'Chatsprache aktualisieren'}
             </button>
           </div>
 
@@ -521,7 +483,9 @@ function VirtualAssistant({ language = 'de' }) {
                 if (e.key === 'Enter') handleSend()
               }}
             />
-            <button onClick={() => handleSend()}>{t.send}</button>
+            <button onClick={() => handleSend()} type="button">
+              {t.send}
+            </button>
           </div>
         </div>
       )}
