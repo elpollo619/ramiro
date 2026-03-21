@@ -1,0 +1,100 @@
+.about-section {
+  padding: 60px 20px;
+  background: #f3f4f6;
+}
+
+.about-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-header {
+  margin-bottom: 30px;
+}
+
+.about-kicker {
+  font-size: 14px;
+  color: #6b7280;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.about-header h1 {
+  font-size: 42px;
+  margin: 10px 0;
+  line-height: 1.1;
+}
+
+.about-header p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.about-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-card p {
+  margin-bottom: 15px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-main-image {
+  margin-bottom: 20px;
+}
+
+.about-main-photo {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 20px;
+  display: block;
+  background: white;
+  padding: 10px;
+}
+
+.about-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-small-photo {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 16px;
+  display: block;
+  background: white;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 16px;
+  }
+
+  .about-header h1 {
+    font-size: 32px;
+  }
+
+  .about-images {
+    grid-template-columns: 1fr;
+  }
+
+  .about-main-photo {
+    max-height: 360px;
+  }
+
+  .about-small-photo {
+    max-height: 260px;
+  }
+}

@@ -1,0 +1,120 @@
+.quote-page {
+  padding: 72px 0 110px;
+}
+
+.quote-head {
+  margin-bottom: 28px;
+}
+
+.quote-head h1 {
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.05em;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.quote-head p {
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.8;
+  max-width: 70ch;
+}
+
+.quote-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+}
+
+.quote-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.quote-card p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.quote-direct-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 22px 0 28px;
+}
+
+.quote-form {
+  display: grid;
+  gap: 18px;
+}
+
+.quote-section-title {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.quote-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quote-field.full {
+  grid-column: 1 / -1;
+}
+
+.quote-field label {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  width: 100%;
+  border: 1px solid rgba(35, 58, 102, 0.14);
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: var(--text);
+  font: inherit;
+}
+
+.quote-field input:focus,
+.quote-field select:focus,
+.quote-field textarea:focus {
+  outline: none;
+  border-color: var(--brand-navy);
+  box-shadow: 0 0 0 4px rgba(49, 95, 181, 0.08);
+}
+
+.quote-submit {
+  margin-top: 8px;
+  width: fit-content;
+}
+
+@media (max-width: 760px) {
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-card {
+    padding: 22px;
+  }
+
+  .quote-submit {
+    width: 100%;
+  }
+}

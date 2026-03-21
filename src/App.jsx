@@ -6,6 +6,7 @@ import ServicesPage from './pages/ServicesPage'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import CateringPage from './pages/CateringPage'
 import ContactPage from './pages/ContactPage'
+import QuoteRequestPage from './pages/QuoteRequestPage'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         />
         <Route path="catering" element={<CateringPage />} />
         <Route path="kontakt" element={<ContactPage />} />
+        <Route path="offerte" element={<QuoteRequestPage />} />
       </Route>
     </Routes>
   )
