@@ -1,120 +1,129 @@
 import { Link } from 'react-router-dom'
-import SmartImage from '../components/SmartImage'
 import { useLanguage } from '../context/LanguageContext'
 import { img } from '../utils/images'
+import './ServicesPage.css'
+
+/* ─────────────────────────────────────────
+   Service data — image + icon + route
+   Text comes from translations (t.services.cards)
+───────────────────────────────────────── */
+const SERVICE_META = [
+  {
+    key: 'windows',
+    slug: 'fensterreinigung',
+    icon: '🪟',
+    imgSrc: null, // uses local image below
+    imgLocal: true,
+  },
+  {
+    key: 'general',
+    slug: 'allgemeine-reinigung',
+    icon: '🧹',
+    imgSrc:
+      'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=75',
+  },
+  {
+    key: 'stairs',
+    slug: 'treppenreinigung',
+    icon: '🏢',
+    imgSrc:
+      'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=900&q=75',
+  },
+  {
+    key: 'garden',
+    slug: 'gartenpflege',
+    icon: '🌿',
+    imgSrc:
+      'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=75',
+  },
+  {
+    key: 'moving',
+    slug: 'umzugshilfe',
+    icon: '📦',
+    imgSrc:
+      'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=75',
+  },
+  {
+    key: 'big',
+    slug: 'grosse-arbeiten',
+    icon: '👥',
+    imgSrc:
+      'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=900&q=75',
+  },
+]
 
 function ServicesPage() {
   const { t } = useLanguage()
+  const cards = t.services.cards
 
   return (
-    <section className="page-section">
+    <section className="services-page">
       <div className="container">
-        <div className="modern-page-head">
-          <span className="modern-kicker">{t.services.kicker}</span>
+
+        {/* ── PAGE HEADER ── */}
+        <div className="services-page-head">
+          <span className="svc-kicker">{t.services.kicker}</span>
           <h1>{t.services.title}</h1>
           <p>{t.services.intro}</p>
         </div>
 
-        <div className="services-image-grid">
-          {/* Fensterreinigung — local photo */}
-          <Link to="/dienstleistungen/fensterreinigung" className="service-card-link">
-            <article className="service-image-card">
-              <SmartImage
-                alt={t.services.cards.windows.title}
-                className="service-card-image"
-                sources={[
-                  img('fenster-reinigung.jpeg'),
-                  img('images/services/fenster-reinigung.jpeg'),
-                ]}
-              />
-              <div className="service-card-content">
-                <h2>{t.services.cards.windows.title}</h2>
-                <p>{t.services.cards.windows.text}</p>
-                <span className="modern-service-link">{t.common.readMore}</span>
-              </div>
-            </article>
-          </Link>
+        {/* ── CARDS GRID ── */}
+        <div className="svc-grid">
+          {SERVICE_META.map((svc) => {
+            const card = cards[svc.key]
+            const imgSrc = svc.imgLocal
+              ? img('fenster-reinigung.jpeg')
+              : svc.imgSrc
 
-          {/* Allgemeine Reinigung — professional cleaning */}
-          <Link to="/dienstleistungen/allgemeine-reinigung" className="service-card-link">
-            <article className="service-image-card">
-              <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=80"
-                alt={t.services.cards.general.title}
-                className="service-card-image"
-              />
-              <div className="service-card-content">
-                <h2>{t.services.cards.general.title}</h2>
-                <p>{t.services.cards.general.text}</p>
-                <span className="modern-service-link">{t.common.readMore}</span>
-              </div>
-            </article>
-          </Link>
-
-          {/* Treppenreinigung — hallway/staircase cleaning */}
-          <Link to="/dienstleistungen/treppenreinigung" className="service-card-link">
-            <article className="service-image-card">
-              <img
-                src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1400&q=80"
-                alt={t.services.cards.stairs.title}
-                className="service-card-image"
-              />
-              <div className="service-card-content">
-                <h2>{t.services.cards.stairs.title}</h2>
-                <p>{t.services.cards.stairs.text}</p>
-                <span className="modern-service-link">{t.common.readMore}</span>
-              </div>
-            </article>
-          </Link>
-
-          {/* Gartenpflege — garden / green space */}
-          <Link to="/dienstleistungen/gartenpflege" className="service-card-link">
-            <article className="service-image-card">
-              <img
-                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=80"
-                alt={t.services.cards.garden.title}
-                className="service-card-image"
-              />
-              <div className="service-card-content">
-                <h2>{t.services.cards.garden.title}</h2>
-                <p>{t.services.cards.garden.text}</p>
-                <span className="modern-service-link">{t.common.readMore}</span>
-              </div>
-            </article>
-          </Link>
-
-          {/* Umzugshilfe — organised move / boxes */}
-          <Link to="/dienstleistungen/umzugshilfe" className="service-card-link">
-            <article className="service-image-card">
-              <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80"
-                alt={t.services.cards.moving.title}
-                className="service-card-image"
-              />
-              <div className="service-card-content">
-                <h2>{t.services.cards.moving.title}</h2>
-                <p>{t.services.cards.moving.text}</p>
-                <span className="modern-service-link">{t.common.readMore}</span>
-              </div>
-            </article>
-          </Link>
-
-          {/* Grössere Arbeiten — professional team working */}
-          <Link to="/dienstleistungen/grosse-arbeiten" className="service-card-link">
-            <article className="service-image-card">
-              <img
-                src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1400&q=80"
-                alt={t.services.cards.big.title}
-                className="service-card-image"
-              />
-              <div className="service-card-content">
-                <h2>{t.services.cards.big.title}</h2>
-                <p>{t.services.cards.big.text}</p>
-                <span className="modern-service-link">{t.common.readMore}</span>
-              </div>
-            </article>
-          </Link>
+            return (
+              <Link
+                key={svc.key}
+                to={`/dienstleistungen/${svc.slug}`}
+                className="svc-card"
+                aria-label={card.title}
+              >
+                <img
+                  src={imgSrc}
+                  alt={card.title}
+                  className="svc-card-img"
+                  loading="lazy"
+                />
+                <div className="svc-card-body">
+                  <span className="svc-card-icon" aria-hidden="true">
+                    {svc.icon}
+                  </span>
+                  <h2>{card.title}</h2>
+                  <p>{card.text}</p>
+                  <span className="svc-card-btn">
+                    {t.common.learnMore} →
+                  </span>
+                </div>
+              </Link>
+            )
+          })}
         </div>
+
+        {/* ── CTA BAND ── */}
+        <div className="svc-cta-band">
+          <div className="svc-cta-band-text">
+            <h3>{t.services.ctaTitle}</h3>
+            <p>{t.services.ctaText}</p>
+          </div>
+          <div className="svc-cta-band-actions">
+            <Link to="/kontakt" className="svc-cta-primary">
+              {t.common.requestNow}
+            </Link>
+            <a
+              href="https://wa.me/41765683445"
+              target="_blank"
+              rel="noreferrer"
+              className="svc-cta-secondary"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   )

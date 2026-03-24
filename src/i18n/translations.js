@@ -60,33 +60,35 @@ const translations = {
     },
     services: {
       kicker: 'Dienstleistungen',
-      title: 'Alles, was ich mit meinen Händen mache',
+      title: 'Sauberkeit, auf die Sie sich verlassen können.',
       intro:
-        'Praktische Unterstützung für Haus, Reinigung, Garten, Umzug und weitere Arbeiten in Bern und Umgebung.',
+        'Professionelle Reinigung, Gartenpflege, Umzugshilfe und mehr – persönlich, zuverlässig und direkt in Bern und Umgebung.',
+      ctaTitle: 'Bereit für ein sauberes Zuhause?',
+      ctaText: 'Jetzt unverbindlich anfragen – wir antworten schnell.',
       cards: {
         windows: {
           title: 'Fensterreinigung',
-          text: 'Saubere Fenster innen und aussen, sorgfältig und streifenfrei.',
+          text: 'Mehr Licht, klare Sicht. Wir reinigen Ihre Fenster innen und aussen – streifenfrei und professionell.',
         },
         general: {
           title: 'Allgemeine Reinigung',
-          text: 'Für Wohnungen, Häuser, Büros und Lokale mit viel Sorgfalt.',
+          text: 'Wohnung, Büro oder Lokal – wir hinterlassen alles sauber, ordentlich und frisch.',
         },
         stairs: {
           title: 'Treppenreinigung',
-          text: 'Saubere Eingänge, Böden und Geländer für Gebäude und Häuser.',
+          text: 'Der erste Eindruck zählt. Gepflegte Treppnhäuser und Eingänge für Ihr Gebäude.',
         },
         garden: {
           title: 'Gartenpflege',
-          text: 'Pflege und Ordnung für Ihren Garten oder Aussenbereich.',
+          text: 'Einen gepflegten Garten ohne Aufwand. Wir kümmern uns um Rasen, Laub und Aussenbereich.',
         },
         moving: {
           title: 'Umzugshilfe',
-          text: 'Praktische Unterstützung bei Transport, Ablauf und Nachreinigung.',
+          text: 'Umzug ohne Stress. Wir helfen beim Transport, Ablauf und der Nachreinigung.',
         },
         big: {
           title: 'Grössere Arbeiten',
-          text: 'Bei grösseren Aufträgen kann ich ein zuverlässiges Team organisieren.',
+          text: 'Auch grosse Aufträge sind kein Problem – bei Bedarf organisieren wir ein zuverlässiges Team.',
         },
       },
     },
@@ -150,34 +152,34 @@ const translations = {
       aboutKicker: 'À propos de moi',
       aboutTitle: 'Personnel, direct et fiable',
       aboutText:
-        'Je m’appelle Ramiro Amaya et je travaille directement avec mes clients, sans intermédiaires. Je peux ainsi offrir un service de confiance et soigné.',
+        'Je m"appelle Ramiro Amaya et je travaille directement avec mes clients, sans intermédiaires. Je peux ainsi offrir un service de confiance et soigné.',
       trustTitle: 'Confiance et proximité',
       trustText1:
-        'Derrière Amaya Bern Services, il n’y a pas seulement un service, mais aussi une famille, des responsabilités et un travail honnête.',
+        'Derrière Amaya Bern Services, il n"y a pas seulement un service, mais aussi une famille, des responsabilités et un travail honnête.',
       trustText2:
-        'Chaque mission est importante pour moi. Je travaille comme si c’était pour ma propre maison ou ma propre famille.',
+        'Chaque mission est importante pour moi. Je travaille comme si c"était pour ma propre maison ou ma propre famille.',
       trustButton: 'En savoir plus sur Ramiro',
       servicesKicker: 'Services',
-      servicesTitle: 'Tout d’un seul contact',
+      servicesTitle: 'Tout d"un seul contact',
       servicesIntro:
         'Service personnel pour le nettoyage, le jardin, le déménagement et la cuisine à Berne et dans les environs.',
       cateringKicker: 'Catering',
       cateringTitle: 'Paellas et cuisine maison pour les occasions spéciales',
       cateringText:
-        'En plus de mon travail dans le nettoyage et l’entretien, j’ai aussi une longue expérience en cuisine. Ma spécialité est la paella pour les fêtes de famille, les groupes et les événements.',
+        'En plus de mon travail dans le nettoyage et l"entretien, j"ai aussi une longue expérience en cuisine. Ma spécialité est la paella pour les fêtes de famille, les groupes et les événements.',
       cateringButton: 'Voir le catering',
     },
     about: {
       kicker: 'À propos de Ramiro',
       title: 'Ramiro Amaya',
       intro:
-        'Un service personnel avec responsabilité, confiance et beaucoup d’expérience à Berne et dans les environs.',
+        'Un service personnel avec responsabilité, confiance et beaucoup d"expérience à Berne et dans les environs.',
       bio: [
         'Ramiro Amaya est né à Tuluá, Valle del Cauca en Colombie, où il a vécu son enfance et son adolescence entouré de sa famille et de ses racines.',
-        'À l’âge de 28 ans, il a décidé de franchir une étape importante dans sa vie : émigrer en Europe pour chercher un avenir meilleur pour ses enfants, Luisa et Cristian. Son parcours a commencé en Suisse, où il a commencé à travailler dans le secteur du nettoyage, acquérant de l’expérience dans le nettoyage de logements, de bâtiments et de restaurants. Dès le début, il s’est distingué par son engagement, son sens des responsabilités et sa fiabilité.',
-        'En plus de son expérience dans le nettoyage, Ramiro a toujours eu une grande passion pour la cuisine. Cette vocation l’a conduit ensuite en Espagne, où il a vécu plus de huit ans à Castellón de la Plana. Il y a travaillé dans un restaurant reconnu de la ville, a approfondi ses compétences culinaires et s’est spécialisé dans la préparation de banquets. Parmi ses spécialités figurent surtout les paellas, préparées avec expérience et tradition.',
-        'Après la crise économique en Espagne, sa famille a également été touchée et a décidé de revenir en Suisse. Grâce à son attitude positive, à ses qualités humaines et à son professionnalisme, d’anciens employeurs lui ont de nouveau fait confiance et lui ont offert de nouvelles opportunités de travail.',
-        'Aujourd’hui, Ramiro travaille aussi bien pour des entreprises qu’en indépendant et propose des services de nettoyage, d’entretien, de jardinage, de déménagement et d’autres travaux généraux. Son objectif reste toujours le même : fournir un travail propre, bien fait et digne de confiance.',
+        'À l"âge de 28 ans, il a décidé de franchir une étape importante dans sa vie : émigrer en Europe pour chercher un avenir meilleur pour ses enfants, Luisa et Cristian. Son parcours a commencé en Suisse, où il a commencé à travailler dans le secteur du nettoyage, acquérant de l"expérience dans le nettoyage de logements, de bâtiments et de restaurants. Dès le début, il s"est distingué par son engagement, son sens des responsabilités et sa fiabilité.',
+        'En plus de son expérience dans le nettoyage, Ramiro a toujours eu une grande passion pour la cuisine. Cette vocation l"a conduit ensuite en Espagne, où il a vécu plus de huit ans à Castellón de la Plana. Il y a travaillé dans un restaurant reconnu de la ville, a approfondi ses compétences culinaires et s"est spécialisé dans la préparation de banquets. Parmi ses spécialités figurent surtout les paellas, préparées avec expérience et tradition.',
+        'Après la crise économique en Espagne, sa famille a également été touchée et a décidé de revenir en Suisse. Grâce à son attitude positive, à ses qualités humaines et à son professionnalisme, d"anciens employeurs lui ont de nouveau fait confiance et lui ont offert de nouvelles opportunités de travail.',
+        'Aujourd"hui, Ramiro travaille aussi bien pour des entreprises qu"en indépendant et propose des services de nettoyage, d"entretien, de jardinage, de déménagement et d"autres travaux généraux. Son objectif reste toujours le même : fournir un travail propre, bien fait et digne de confiance.',
         'En dehors du travail, il accorde une grande importance au temps passé en famille. Le dimanche, il aime partager des moments spéciaux avec sa femme et sa petite-fille, en profitant de ce qui compte le plus pour lui dans la vie.',
       ],
       altPortrait: 'Ramiro Amaya',
@@ -188,18 +190,20 @@ const translations = {
       kicker: 'Services',
       title: 'Tout ce que je fais de mes mains',
       intro:
-        'Une aide pratique pour la maison, le nettoyage, le jardin, le déménagement et d’autres travaux à Berne et dans les environs.',
+        'Une aide pratique pour la maison, le nettoyage, le jardin, le déménagement et d"autres travaux à Berne et dans les environs.',
+      ctaTitle: 'Prêt pour un intrieur propre ?',
+      ctaText: 'Demandez un devis sans engagement – nous répondons rapidement.',
       cards: {
         windows: {
           title: 'Nettoyage de fenêtres',
-          text: 'Fenêtres propres à l’intérieur comme à l’extérieur, avec soin et sans traces.',
+          text: 'Fenêtres propres à l"intérieur comme à l"extérieur, avec soin et sans traces.',
         },
         general: {
           title: 'Nettoyage général',
           text: 'Pour appartements, maisons, bureaux et locaux avec beaucoup de soin.',
         },
         stairs: {
-          title: 'Nettoyage d’escaliers',
+          title: 'Nettoyage d"escaliers',
           text: 'Entrées, sols et rampes propres pour immeubles et maisons.',
         },
         garden: {
@@ -208,7 +212,7 @@ const translations = {
         },
         moving: {
           title: 'Aide au déménagement',
-          text: 'Soutien pratique pour le transport, l’organisation et le nettoyage final.',
+          text: 'Soutien pratique pour le transport, l"organisation et le nettoyage final.',
         },
         big: {
           title: 'Travaux plus importants',
@@ -223,7 +227,7 @@ const translations = {
         'Expérience, goût et service personnel pour fêtes de famille, petits événements et occasions spéciales.',
       cardTitle: 'La cuisine est une part importante de ma vie',
       p1:
-        'Pendant plusieurs années, j’ai travaillé dans un restaurant en Espagne et j’y ai appris à préparer des banquets et des plats traditionnels.',
+        'Pendant plusieurs années, j"ai travaillé dans un restaurant en Espagne et j"y ai appris à préparer des banquets et des plats traditionnels.',
       p2:
         'Ma spécialité, ce sont les paellas. Je cuisine avec soin, expérience et plaisir pour les familles, les groupes et les occasions spéciales.',
       altHero: 'Ramiro en train de cuisiner',
@@ -232,7 +236,7 @@ const translations = {
       kicker: 'Contact',
       title: 'Contactez-moi',
       intro:
-        'Avez-vous besoin d’aide pour le nettoyage, le jardinage, les déménagements ou le catering ? Écrivez-moi ou appelez-moi.',
+        'Avez-vous besoin d"aide pour le nettoyage, le jardinage, les déménagements ou le catering ? Écrivez-moi ou appelez-moi.',
       direct: 'Contact direct sans intermédiaires.',
       region: 'Berne et environs',
       emailLabel: 'E-mail',
@@ -245,7 +249,7 @@ const translations = {
     },
     footer: {
       description:
-        'Service personnel pour le nettoyage, l’entretien du jardin, les déménagements et la cuisine à Berne et dans les environs.',
+        'Service personnel pour le nettoyage, l"entretien du jardin, les déménagements et la cuisine à Berne et dans les environs.',
       navigation: 'Navigation',
       contact: 'Contact',
     },
@@ -279,7 +283,7 @@ const translations = {
         'Mi chiamo Ramiro Amaya e lavoro direttamente con i miei clienti, senza intermediari. In questo modo posso offrire un servizio affidabile e accurato.',
       trustTitle: 'Fiducia e vicinanza',
       trustText1:
-        'Dietro Amaya Bern Services non c’è solo un servizio, ma anche famiglia, responsabilità e lavoro onesto.',
+        'Dietro Amaya Bern Services non c"è solo un servizio, ma anche famiglia, responsabilità e lavoro onesto.',
       trustText2:
         'Per me ogni incarico è importante. Lavoro come se fosse per la mia casa o per la mia famiglia.',
       trustButton: 'Scopri di più su Ramiro',
@@ -300,7 +304,7 @@ const translations = {
         'Servizio personale con responsabilità, fiducia e molta esperienza a Berna e dintorni.',
       bio: [
         'Ramiro Amaya è nato a Tuluá, Valle del Cauca in Colombia, dove ha vissuto la sua infanzia e adolescenza circondato dalla sua famiglia e dalle sue radici.',
-        'A 28 anni ha deciso di compiere un passo importante nella sua vita: emigrare in Europa per cercare un futuro migliore per i suoi figli, Luisa e Cristian. Il suo percorso è iniziato in Svizzera, dove ha cominciato a lavorare nel settore delle pulizie, acquisendo esperienza nella pulizia di abitazioni, edifici e ristoranti. Fin dall’inizio si è distinto per impegno, responsabilità e affidabilità.',
+        'A 28 anni ha deciso di compiere un passo importante nella sua vita: emigrare in Europa per cercare un futuro migliore per i suoi figli, Luisa e Cristian. Il suo percorso è iniziato in Svizzera, dove ha cominciato a lavorare nel settore delle pulizie, acquisendo esperienza nella pulizia di abitazioni, edifici e ristoranti. Fin dall"inizio si è distinto per impegno, responsabilità e affidabilità.',
         'Oltre alla sua esperienza nelle pulizie, Ramiro ha sempre avuto una grande passione per la cucina. Questa vocazione lo ha portato successivamente in Spagna, dove ha vissuto per oltre otto anni a Castellón de la Plana. Lì ha lavorato in un ristorante rinomato della città, perfezionando le sue capacità culinarie e specializzandosi nella preparazione di banchetti. Tra le sue specialità spiccano soprattutto le paellas, preparate con esperienza e tradizione.',
         'Dopo la crisi economica in Spagna, anche la sua famiglia ne è stata colpita e ha deciso di tornare in Svizzera. Grazie al suo atteggiamento positivo, alle sue qualità umane e al suo professionalismo, ex datori di lavoro hanno nuovamente riposto fiducia in lui offrendogli nuove opportunità di lavoro.',
         'Oggi Ramiro lavora sia per aziende sia come indipendente e offre servizi nei settori della pulizia, manutenzione, giardinaggio, traslochi e altri lavori generali. Il suo obiettivo è sempre lo stesso: svolgere un lavoro pulito, ben fatto e affidabile.',
@@ -315,6 +319,8 @@ const translations = {
       title: 'Tutto quello che faccio con le mie mani',
       intro:
         'Aiuto pratico per casa, pulizia, giardino, trasloco e altri lavori a Berna e dintorni.',
+      ctaTitle: 'Pronti per una casa pulita?',
+      ctaText: 'Richiedete un preventivo senza impegno – rispondiamo subito.',
       cards: {
         windows: {
           title: 'Pulizia finestre',
@@ -407,7 +413,7 @@ const translations = {
       trustText1:
         'Davos Amaya Bern Services stat betg mo in servetsch, mabain era famiglia, responsabladad e lavur onesta.',
       trustText2:
-        'Mintga incarica è impurtanta per mai. Jau lavur sco sch’i fiss per mia atgna chasa u mia atgna famiglia.',
+        'Mintga incarica è impurtanta per mai. Jau lavur sco sch"i fiss per mia atgna chasa u mia atgna famiglia.',
       trustButton: 'Vair dapli davart Ramiro',
       servicesKicker: 'Servetschs',
       servicesTitle: 'Tut ord ina maun',
@@ -425,9 +431,9 @@ const translations = {
       intro:
         'Servetsch persunal cun responsabladad, confidenza e blera experientscha a Berna e conturn.',
       bio: [
-        'Ramiro Amaya è naschì a Tuluá, Valle del Cauca en Columbia, nua ch’el ha passentà sia uffanza e giuventetgna en il ravugl da sia famiglia e sias ragischs.',
-        'Cun 28 onns ha el decidì da far in pass impurtant en sia vita: emigrar en Europa per tschertgar in meglier futur per ses uffants, Luisa e Cristian. Ses viadi ha cumenzà en Svizra, nua ch’el ha cumenzà a lavurar en il sectur da nettegiar e rimnà experientscha en abitaziuns, bajetgs e restaurants. Dapi l’entschatta è el sa distinguì tras sia motivaziun, responsabladad e fidanza.',
-        'Ultra da sia experientscha en nettegiar ha Ramiro adina gì ina gronda passiun per cuschinar. Questa vocaziun l’ha manà pli tard en Spagna, nua ch’el ha vivì passa otg onns a Castellón de la Plana. Là ha el lavurà en in restaurant renumà da la citad, perfecziunà sias abilitads culinaricas e sa spezialisà per preparar banquets. Tranter sias spezialitads sa chattan surtut paellas, preparadas cun experientscha e tradiziun.',
+        'Ramiro Amaya è naschì a Tuluá, Valle del Cauca en Columbia, nua ch"el ha passentà sia uffanza e giuventetgna en il ravugl da sia famiglia e sias ragischs.',
+        'Cun 28 onns ha el decidì da far in pass impurtant en sia vita: emigrar en Europa per tschertgar in meglier futur per ses uffants, Luisa e Cristian. Ses viadi ha cumenzà en Svizra, nua ch"el ha cumenzà a lavurar en il sectur da nettegiar e rimnà experientscha en abitaziuns, bajetgs e restaurants. Dapi l"entschatta è el sa distinguì tras sia motivaziun, responsabladad e fidanza.',
+        'Ultra da sia experientscha en nettegiar ha Ramiro adina gì ina gronda passiun per cuschinar. Questa vocaziun l"ha manà pli tard en Spagna, nua ch"el ha vivì passa otg onns a Castellón de la Plana. Là ha el lavurà en in restaurant renumà da la citad, perfecziunà sias abilitads culinaricas e sa spezialisà per preparar banquets. Tranter sias spezialitads sa chattan surtut paellas, preparadas cun experientscha e tradiziun.',
         'Suenter la crisa economica en Spagna è era sia famiglia stada pertutgada e ha decidì da returnar en Svizra. Grazia a sia tenuta positiva, sia qualitad umana e sia professiunalitad han anteriurs patruns puspè gì confidenza en el ed al han purschì novas pussaivladads da lavur.',
         'Oz lavura Ramiro tant per interpresas sco era independentamain e porscha servetschs en ils champs nettegiar, mantegniment, tgira dal curtin, midadas ed autras lavurs generalas. Ses intent resta adina il medem: furnir lavur netta, bain fatga e fidada.',
         'Ordaifer la lavur appreziescha el fitg il temp cun la famiglia. La dumengia passenta el gugent muments spezials cun sia dunna e sia biadia e giauda quai che importa il pli fitg en sia vita.',
@@ -441,6 +447,8 @@ const translations = {
       title: 'Tut quai che jau fatsch cun mes mauns',
       intro:
         'Sustegn pratic per chasa, nettegiar, curtin, midada ed autras lavurs a Berna e conturn.',
+      ctaTitle: 'Pront per in abitadi nettg?',
+      ctaText: 'Dumandar ina offerta senza obligaziun – nus respondain svelt.',
       cards: {
         windows: {
           title: 'Nettegiar fanestras',
@@ -567,6 +575,8 @@ const translations = {
       title: 'Todo lo que hago con mis manos',
       intro:
         'Ayuda práctica para casa, limpieza, jardín, mudanza y otros trabajos en Berna y alrededores.',
+      ctaTitle: 'Listo para un hogar mas limpio?',
+      ctaText: 'Solicita un presupuesto sin compromiso – respondemos rapido.',
       cards: {
         windows: {
           title: 'Limpieza de ventanas',
@@ -693,6 +703,8 @@ const translations = {
       title: 'Everything I do with my hands',
       intro:
         'Practical help for home, cleaning, garden care, moving and other jobs in Bern and the surrounding area.',
+      ctaTitle: 'Ready for a cleaner home?',
+      ctaText: 'Request a free quote – we respond quickly.',
       cards: {
         windows: {
           title: 'Window cleaning',
@@ -819,6 +831,8 @@ const translations = {
       title: 'Tudo o que faço com as minhas mãos',
       intro:
         'Ajuda prática para casa, limpeza, jardim, mudanças e outros trabalhos em Berna e arredores.',
+      ctaTitle: 'Pronto para uma casa mais limpa?',
+      ctaText: 'Peça um orçamento sem compromisso – respondemos rapidamente.',
       cards: {
         windows: {
           title: 'Limpeza de janelas',

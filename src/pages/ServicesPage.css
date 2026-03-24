@@ -1,0 +1,244 @@
+/* ─── SERVICES PAGE ─── */
+
+.services-page {
+  padding: 72px 0 100px;
+  background: #f5f6f8;
+}
+
+/* ── PAGE HEADER ── */
+
+.services-page-head {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 56px;
+}
+
+.services-page-head .svc-kicker {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-navy, #233a66);
+  background: rgba(35, 58, 102, 0.09);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.services-page-head h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text, #1d2430);
+  margin-bottom: 14px;
+}
+
+.services-page-head p {
+  font-size: 1.05rem;
+  color: var(--muted, #667085);
+  line-height: 1.7;
+}
+
+/* ── CARDS GRID ── */
+
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ── SINGLE CARD ── */
+
+.svc-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(18, 26, 38, 0.07);
+  border: 1px solid rgba(18, 26, 38, 0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.svc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(18, 26, 38, 0.13);
+}
+
+/* ── CARD IMAGE ── */
+
+.svc-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ── CARD BODY ── */
+
+.svc-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px 22px 20px;
+  gap: 8px;
+}
+
+.svc-card-icon {
+  font-size: 22px;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+
+.svc-card-body h2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text, #1d2430);
+  line-height: 1.25;
+}
+
+.svc-card-body p {
+  font-size: 0.9rem;
+  color: var(--muted, #667085);
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* ── CARD BUTTON ── */
+
+.svc-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-navy, #233a66);
+  background: rgba(35, 58, 102, 0.07);
+  padding: 8px 14px;
+  border-radius: 999px;
+  align-self: flex-start;
+  transition: background 0.18s, color 0.18s;
+}
+
+.svc-card:hover .svc-card-btn {
+  background: var(--brand-navy, #233a66);
+  color: #fff;
+}
+
+/* ── CTA BAND ── */
+
+.svc-cta-band {
+  margin-top: 56px;
+  background: var(--brand-navy, #233a66);
+  border-radius: 20px;
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.svc-cta-band-text h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.svc-cta-band-text p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.svc-cta-band-actions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.svc-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--brand-yellow, #e3b321);
+  color: #1d2430;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: opacity 0.18s;
+  white-space: nowrap;
+}
+
+.svc-cta-primary:hover {
+  opacity: 0.88;
+}
+
+.svc-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.18s;
+  white-space: nowrap;
+}
+
+.svc-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 1000px) {
+  .svc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .services-page {
+    padding: 52px 0 72px;
+  }
+
+  .services-page-head {
+    margin-bottom: 36px;
+  }
+
+  .svc-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .svc-card-img {
+    height: 180px;
+  }
+
+  .svc-cta-band {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+  }
+
+  .svc-cta-band-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .svc-cta-primary,
+  .svc-cta-secondary {
+    justify-content: center;
+  }
+}
