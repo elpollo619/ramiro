@@ -1,75 +1,16 @@
-import { createContext, useContext, useMemo, useState } from 'react'
+import { createContext, useContext, useEffect, useMemo, useState } from 'react'
+import translations from '../i18n/translations'
 
 const LanguageContext = createContext(null)
 
-const translations = {
-  de: {
-    nav: {
-      about: 'Über Ramiro',
-      services: 'Dienstleistungen',
-      contact: 'Kontakt',
-      call: 'Jetzt anrufen',
-      quote: 'Offerte',
-    },
-  },
-  es: {
-    nav: {
-      about: 'Sobre Ramiro',
-      services: 'Servicios',
-      contact: 'Contacto',
-      call: 'Llamar ahora',
-      quote: 'Presupuesto',
-    },
-  },
-  pt: {
-    nav: {
-      about: 'Sobre Ramiro',
-      services: 'Serviços',
-      contact: 'Contacto',
-      call: 'Ligar agora',
-      quote: 'Orçamento',
-    },
-  },
-  en: {
-    nav: {
-      about: 'About Ramiro',
-      services: 'Services',
-      contact: 'Contact',
-      call: 'Call now',
-      quote: 'Quote',
-    },
-  },
-  fr: {
-    nav: {
-      about: 'À propos de Ramiro',
-      services: 'Services',
-      contact: 'Contact',
-      call: 'Appeler',
-      quote: 'Devis',
-    },
-  },
-  it: {
-    nav: {
-      about: 'Su Ramiro',
-      services: 'Servizi',
-      contact: 'Contatto',
-      call: 'Chiama ora',
-      quote: 'Preventivo',
-    },
-  },
-  rm: {
-    nav: {
-      about: 'Davart Ramiro',
-      services: 'Servetschs',
-      contact: 'Contact',
-      call: 'Clamar ussa',
-      quote: 'Offerta',
-    },
-  },
-}
-
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('de')
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem('site-language') || 'de'
+  })
+
+  useEffect(() => {
+    localStorage.setItem('site-language', language)
+  }, [language])
 
   const value = useMemo(() => {
     return {

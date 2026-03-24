@@ -1,7 +1,12 @@
+import { img } from '../utils/images'
+
 export const services = [
   {
     slug: 'allgemeine-reinigung',
     title: 'Allgemeine Reinigung',
+    image: img('ramiro-portrait.jpeg'),
+    shortDescription:
+      'Reinigung für Wohnungen, Büros und Lokale mit Sorgfalt, Ordnung und persönlichem Einsatz.',
     shortText:
       'Reinigung für Wohnungen, Büros und Lokale mit Sorgfalt, Ordnung und persönlichem Einsatz.',
     intro:
@@ -24,6 +29,9 @@ export const services = [
   {
     slug: 'fensterreinigung',
     title: 'Fensterreinigung',
+    image: img('fenster-reinigung.jpeg'),
+    shortDescription:
+      'Saubere Fenster für mehr Licht, bessere Sicht und ein gepflegtes Erscheinungsbild.',
     shortText:
       'Saubere Fenster für mehr Licht, bessere Sicht und ein gepflegtes Erscheinungsbild.',
     intro:
@@ -41,6 +49,9 @@ export const services = [
   {
     slug: 'treppenreinigung',
     title: 'Treppenreinigung',
+    image: img('logo-main.png'),
+    shortDescription:
+      'Saubere Treppenhäuser und Eingänge für einen gepflegten ersten Eindruck im Gebäude.',
     shortText:
       'Saubere Treppenhäuser und Eingänge für einen gepflegten ersten Eindruck im Gebäude.',
     intro:
@@ -62,6 +73,9 @@ export const services = [
   {
     slug: 'gartenpflege',
     title: 'Gartenpflege',
+    image: img('family.jpeg'),
+    shortDescription:
+      'Gepflegte Aussenbereiche mit praktischer Hilfe bei Rasen, Laub und allgemeinem Unterhalt.',
     shortText:
       'Gepflegte Aussenbereiche mit praktischer Hilfe bei Rasen, Laub und allgemeinem Unterhalt.',
     intro:
@@ -79,6 +93,9 @@ export const services = [
   {
     slug: 'umzugshilfe',
     title: 'Umzugshilfe',
+    image: img('ramiro-portrait 2.jpeg'),
+    shortDescription:
+      'Praktische Unterstützung bei Umzügen mit weniger Stress und besserer Organisation.',
     shortText:
       'Praktische Unterstützung bei Umzügen mit weniger Stress und besserer Organisation.',
     intro:
@@ -100,6 +117,9 @@ export const services = [
   {
     slug: 'grosse-arbeiten',
     title: 'Grössere Arbeiten',
+    image: img('family 2.jpeg'),
+    shortDescription:
+      'Auch grössere Aufträge sind möglich, weil ich bei Bedarf ein zuverlässiges Team organisiere.',
     shortText:
       'Auch grössere Aufträge sind möglich, weil ich bei Bedarf ein zuverlässiges Team organisiere.',
     intro:

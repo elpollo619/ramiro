@@ -1,6 +1,7 @@
 import './AboutPage.css'
 import SmartImage from '../components/SmartImage'
 import { useLanguage } from '../context/LanguageContext'
+import { img } from '../utils/images'
 
 function AboutPage() {
   const { t } = useLanguage()
@@ -25,9 +26,9 @@ function AboutPage() {
             alt={t.about.altPortrait}
             className="about-main-photo"
             sources={[
-              '/about/ramiro-portrait.jpeg',
-              '/ramiro-portrait.jpeg',
-              '/images/about/ramiro-portrait.jpeg',
+              img('ramiro-portrait.jpeg'),
+              img('images/about/ramiro-portrait.jpeg'),
+              img('about/ramiro-portrait.jpeg'),
             ]}
           />
         </div>
@@ -37,10 +38,10 @@ function AboutPage() {
             alt={t.about.altFamily}
             className="about-small-photo"
             sources={[
-              '/about/family.jpeg',
-              '/family.jpeg',
-              '/familia/family.jpeg',
-              '/images/about/family.jpeg',
+              img('family.jpeg'),
+              img('images/about/family.jpeg'),
+              img('familia/family.jpeg'),
+              img('about/family.jpeg'),
             ]}
           />
 
@@ -48,10 +49,10 @@ function AboutPage() {
             alt={t.about.altGranddaughter}
             className="about-small-photo"
             sources={[
-              '/about/nieta.jpeg',
-              '/nieta.jpeg',
-              '/familia/nieta.jpeg',
-              '/images/about/nieta.jpeg',
+              img('nieta.jpeg'),
+              img('images/about/nieta.jpeg'),
+              img('familia/nieta.jpeg'),
+              img('about/nieta.jpeg'),
             ]}
           />
         </div>

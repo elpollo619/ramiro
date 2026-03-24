@@ -5,7 +5,7 @@ function SmartImage({ sources = [], alt = '', className = '' }) {
 
   const handleError = () => {
     if (index < sources.length - 1) {
-      setIndex(index + 1)
+      setIndex((prev) => prev + 1)
     }
   }
 

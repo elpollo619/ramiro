@@ -407,7 +407,6 @@ function VirtualAssistant({ language = 'de' }) {
         type="button"
       >
         <span className="va-fab-icon">💬</span>
-        <span>{t.assistant}</span>
       </button>
 
       {isOpen && (
@@ -444,7 +443,7 @@ function VirtualAssistant({ language = 'de' }) {
           </div>
 
           <div className="va-cta-row">
-            <a className="va-budget" href="/offerte">
+            <a className="va-budget" href="#/offerte">
               {t.form}
             </a>
 

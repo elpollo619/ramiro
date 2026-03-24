@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import ServicesPage from './pages/ServicesPage'
-import ServiceDetailPage from './pages/ServiceDetailPage'
-import CateringPage from './pages/CateringPage'
-import ContactPage from './pages/ContactPage'
-import QuoteRequestPage from './pages/QuoteRequestPage'
+import Layout from './components/Layout.jsx'
+import HomePage from './pages/HomePage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import ServicesPage from './pages/ServicesPage.jsx'
+import ServiceDetailPage from './pages/ServiceDetailPage.jsx'
+import CateringPage from './pages/CateringPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import QuoteRequestPage from './pages/QuoteRequestPage.jsx'
 
 function App() {
   return (

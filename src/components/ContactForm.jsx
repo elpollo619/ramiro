@@ -22,10 +22,10 @@ function ContactForm() {
               <strong>Region:</strong> Bern und Umgebung
             </p>
             <p>
-              <strong>Telefon:</strong> +41 00 000 00 00
+              <strong>Telefon:</strong> +41 76 568 34 45
             </p>
             <p>
-              <strong>E-Mail:</strong> info@amaya-allroundservice.ch
+              <strong>E-Mail:</strong> amayabernservices@gmail.com
             </p>
           </div>
         </div>

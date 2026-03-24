@@ -1,5 +1,6 @@
 import { NavLink, Link } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
+import { img } from '../utils/images'
 
 function Navbar() {
   const { language, setLanguage, t } = useLanguage()
@@ -19,7 +20,7 @@ function Navbar() {
       <div className="container navbar">
         <Link to="/" className="brand-icon-only" aria-label="Amaya Bern Services">
           <img
-            src="/logo/logo-icon.png"
+            src={img('logo-icon.png')}
             alt="Amaya Bern Services"
             className="brand-icon-only-image"
           />
@@ -49,6 +50,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink to="/catering">Catering</NavLink>
+
           <NavLink to="/kontakt">
             {t?.nav?.contact ||
               (language === 'es'

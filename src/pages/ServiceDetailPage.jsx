@@ -6,7 +6,7 @@ function ServiceDetailPage() {
   const { language } = useLanguage()
 
   const serviceDetails = {
-    'fensterreinigung': {
+    fensterreinigung: {
       de: {
         kicker: 'Dienstleistung',
         title: 'Fensterreinigung',
@@ -48,7 +48,11 @@ function ServiceDetailPage() {
           'Elles améliorent l’image générale de la maison, de l’appartement ou du commerce.',
         ],
         includedTitle: 'Qu’est-ce qui est inclus ?',
-        includedList: ['Intérieur et extérieur', 'Travail détaillé', 'Résultat professionnel'],
+        includedList: [
+          'Intérieur et extérieur',
+          'Travail détaillé',
+          'Résultat professionnel',
+        ],
         noteTitle: 'Remarque personnelle',
         noteText:
           'Je veille à ce que chaque fenêtre soit réellement propre. Plus de lumière et une meilleure image pour votre espace.',
@@ -69,7 +73,11 @@ function ServiceDetailPage() {
           'Migliorano l’aspetto generale di casa, appartamento o attività.',
         ],
         includedTitle: 'Che cosa è incluso?',
-        includedList: ['Interno ed esterno', 'Lavoro dettagliato', 'Risultato professionale'],
+        includedList: [
+          'Interno ed esterno',
+          'Lavoro dettagliato',
+          'Risultato professionale',
+        ],
         noteTitle: 'Nota personale',
         noteText:
           'Faccio attenzione che ogni finestra sia davvero pulita. Più luce e un’immagine migliore per il vostro spazio.',
@@ -90,7 +98,11 @@ function ServiceDetailPage() {
           'Ellas megliereschan l’aspect general da chasa, abitaziun u affar.',
         ],
         includedTitle: 'Tge è cuntegnì?',
-        includedList: ['Entaifer e dadora', 'Lavur detagliada', 'Resultat professiunal'],
+        includedList: [
+          'Entaifer e dadora',
+          'Lavur detagliada',
+          'Resultat professiunal',
+        ],
         noteTitle: 'Remartga persunala',
         noteText:
           'Jau guard che mintga fanestra saja propi netta. Dapli glisch ed in meglier maletg per Voss spazi.',
@@ -111,7 +123,11 @@ function ServiceDetailPage() {
           'Mejoran la imagen general de la casa, vivienda o negocio.',
         ],
         includedTitle: '¿Qué incluye?',
-        includedList: ['Interior y exterior', 'Trabajo detallado', 'Resultado profesional'],
+        includedList: [
+          'Interior y exterior',
+          'Trabajo detallado',
+          'Resultado profesional',
+        ],
         noteTitle: 'Nota personal',
         noteText:
           'Me fijo en que cada ventana quede realmente limpia. Más luz y una mejor imagen para su espacio.',
@@ -132,7 +148,11 @@ function ServiceDetailPage() {
           'They improve the overall image of a house, flat or business.',
         ],
         includedTitle: 'What is included?',
-        includedList: ['Inside and outside', 'Detailed work', 'Professional result'],
+        includedList: [
+          'Inside and outside',
+          'Detailed work',
+          'Professional result',
+        ],
         noteTitle: 'Personal note',
         noteText:
           'I make sure every window is truly clean. More light and a better image for your space.',
@@ -153,7 +173,11 @@ function ServiceDetailPage() {
           'Melhoram a imagem geral da casa, apartamento ou negócio.',
         ],
         includedTitle: 'O que está incluído?',
-        includedList: ['Interior e exterior', 'Trabalho detalhado', 'Resultado profissional'],
+        includedList: [
+          'Interior e exterior',
+          'Trabalho detalhado',
+          'Resultado profissional',
+        ],
         noteTitle: 'Nota pessoal',
         noteText:
           'Tenho cuidado para que cada janela fique realmente limpa. Mais luz e uma melhor imagem para o seu espaço.',
@@ -338,7 +362,7 @@ function ServiceDetailPage() {
       },
     },
 
-    'treppenreinigung': {
+    treppenreinigung: {
       de: {
         kicker: 'Dienstleistung',
         title: 'Treppenreinigung',
@@ -516,7 +540,7 @@ function ServiceDetailPage() {
       },
     },
 
-    'gartenpflege': {
+    gartenpflege: {
       de: {
         kicker: 'Dienstleistung',
         title: 'Gartenpflege',
@@ -694,7 +718,7 @@ function ServiceDetailPage() {
       },
     },
 
-    'umzugshilfe': {
+    umzugshilfe: {
       de: {
         kicker: 'Dienstleistung',
         title: 'Umzugshilfe',
@@ -872,7 +896,7 @@ function ServiceDetailPage() {
       },
     },
 
-    'groessere-arbeiten': {
+    'grosse-arbeiten': {
       de: {
         kicker: 'Dienstleistung',
         title: 'Grössere Arbeiten',
