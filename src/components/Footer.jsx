@@ -22,6 +22,7 @@ function Footer() {
 
         <div className="footer-nav">
           <h4>{t.footer?.navigation}</h4>
+          <Link to="/">Home</Link>
           <Link to="/ueber-ramiro">{t.nav?.about}</Link>
           <Link to="/dienstleistungen">{t.nav?.services}</Link>
           <Link to="/catering">Catering</Link>
@@ -32,9 +33,7 @@ function Footer() {
         <div className="footer-contact">
           <h4>{t.footer?.contact}</h4>
           <p>Bern und Umgebung</p>
-          <a href="mailto:amayabernservices@gmail.com">
-            amayabernservices@gmail.com
-          </a>
+          <a href="mailto:info@amayabern.ch">info@amayabern.ch</a>
           <a href="tel:+41765683445">+41 76 568 34 45</a>
           <a
             href="https://wa.me/41765683445"
@@ -47,8 +46,12 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <div className="container">
+        <div className="container footer-bottom-inner">
           <p>© {new Date().getFullYear()} Amaya Bern Services. Alle Rechte vorbehalten.</p>
+          <div className="footer-legal-links">
+            <Link to="/impressum">Impressum</Link>
+            <Link to="/datenschutz">Datenschutz</Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -49,7 +49,7 @@ export const services = [
   {
     slug: 'treppenreinigung',
     title: 'Treppenreinigung',
-    image: img('logo-main.png'),
+    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1400&q=80',
     shortDescription:
       'Saubere Treppenhäuser und Eingänge für einen gepflegten ersten Eindruck im Gebäude.',
     shortText:
@@ -73,7 +73,7 @@ export const services = [
   {
     slug: 'gartenpflege',
     title: 'Gartenpflege',
-    image: img('family.jpeg'),
+    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=80',
     shortDescription:
       'Gepflegte Aussenbereiche mit praktischer Hilfe bei Rasen, Laub und allgemeinem Unterhalt.',
     shortText:
@@ -93,7 +93,7 @@ export const services = [
   {
     slug: 'umzugshilfe',
     title: 'Umzugshilfe',
-    image: img('ramiro-portrait 2.jpeg'),
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80',
     shortDescription:
       'Praktische Unterstützung bei Umzügen mit weniger Stress und besserer Organisation.',
     shortText:
@@ -117,7 +117,7 @@ export const services = [
   {
     slug: 'grosse-arbeiten',
     title: 'Grössere Arbeiten',
-    image: img('family 2.jpeg'),
+    image: 'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1400&q=80',
     shortDescription:
       'Auch grössere Aufträge sind möglich, weil ich bei Bedarf ein zuverlässiges Team organisiere.',
     shortText:

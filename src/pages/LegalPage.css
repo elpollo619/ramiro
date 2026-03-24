@@ -1,0 +1,151 @@
+.legal-section {
+  padding: 64px 20px 80px;
+  background: #f3f4f6;
+  min-height: 60vh;
+}
+
+.legal-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.legal-header {
+  margin-bottom: 40px;
+}
+
+.legal-kicker {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-navy, #233a66);
+  background: rgba(35, 58, 102, 0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.legal-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--text, #1d2430);
+  margin-bottom: 14px;
+}
+
+.legal-intro {
+  color: var(--muted, #667085);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.legal-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 24px rgba(18, 26, 38, 0.06);
+}
+
+.legal-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brand-navy, #233a66);
+  margin-bottom: 16px;
+}
+
+.legal-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted, #667085);
+  margin-bottom: 6px;
+}
+
+.legal-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text, #1d2430);
+  margin-bottom: 12px;
+}
+
+.legal-card p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-block {
+  margin-bottom: 24px;
+}
+
+.legal-block:last-child {
+  margin-bottom: 0;
+}
+
+.legal-card a {
+  color: var(--brand-navy, #233a66);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-card a:hover {
+  color: var(--brand-blue, #315fb5);
+}
+
+.legal-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 16px;
+}
+
+.legal-list li {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text, #1d2430);
+  padding: 6px 0 6px 22px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.legal-list li:last-child {
+  border-bottom: none;
+}
+
+.legal-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--brand-navy, #233a66);
+  font-weight: 700;
+}
+
+.legal-note {
+  font-size: 13px;
+  color: var(--muted, #667085);
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.legal-note a {
+  color: var(--brand-navy, #233a66);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .legal-section {
+    padding: 44px 16px 60px;
+  }
+
+  .legal-header h1 {
+    font-size: 28px;
+  }
+
+  .legal-card {
+    padding: 22px 18px;
+  }
+}

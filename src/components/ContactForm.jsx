@@ -25,7 +25,7 @@ function ContactForm() {
               <strong>Telefon:</strong> +41 76 568 34 45
             </p>
             <p>
-              <strong>E-Mail:</strong> amayabernservices@gmail.com
+              <strong>E-Mail:</strong> info@amayabern.ch
             </p>
           </div>
         </div>

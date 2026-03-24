@@ -1,5 +1,5 @@
 .about-section {
-  padding: 60px 20px;
+  padding: 64px 20px 80px;
   background: #f3f4f6;
 }
 
@@ -8,31 +8,83 @@
   margin: 0 auto;
 }
 
-/* HEADER */
+/* ── HEADER ── */
 
 .about-header {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .about-kicker {
-  font-size: 14px;
-  color: #6b7280;
   display: inline-block;
-  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-navy, #233a66);
+  background: rgba(35, 58, 102, 0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
 }
 
 .about-header h1 {
   font-size: 42px;
-  margin: 10px 0;
+  font-weight: 800;
+  margin: 0 0 12px;
   line-height: 1.1;
+  color: var(--text, #1d2430);
 }
 
 .about-header p {
-  color: #6b7280;
+  color: var(--muted, #6b7280);
   line-height: 1.6;
+  font-size: 16px;
+  max-width: 560px;
 }
 
-/* TEXT CARD */
+/* ── HERO LAYOUT: photo left + intro text right ── */
+
+.about-hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-hero-image {
+  /* container for the main portrait */
+}
+
+.about-main-photo {
+  width: 100%;
+  height: 460px;
+  object-fit: contain;
+  border-radius: 28px;
+  display: block;
+  background: #ffffff;
+  padding: 16px;
+  box-shadow: 0 18px 48px rgba(18, 26, 38, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-main-photo:hover {
+  transform: scale(1.015);
+}
+
+.about-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-hero-text p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text, #1d2430);
+}
+
+/* ── BIO CARD (remaining paragraphs) ── */
 
 .about-card {
   background: white;
@@ -40,44 +92,20 @@
   border-radius: 20px;
   margin-bottom: 40px;
   line-height: 1.7;
-  box-shadow: 0 18px 48px rgba(18, 26, 38, 0.08);
+  box-shadow: 0 4px 24px rgba(18, 26, 38, 0.07);
 }
 
 .about-card p {
   margin-bottom: 16px;
+  font-size: 15px;
+  color: var(--text, #1d2430);
 }
 
 .about-card p:last-child {
   margin-bottom: 0;
 }
 
-/* MAIN IMAGE */
-
-.about-main-image {
-  margin-bottom: 24px;
-}
-
-.about-main-photo {
-  width: 100%;
-  height: 520px;
-
-  object-fit: contain; /* 👈 NO RECORTA */
-
-  border-radius: 28px;
-  display: block;
-
-  background: #ffffff;
-  padding: 14px;
-
-  box-shadow: 0 18px 48px rgba(18, 26, 38, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.about-main-photo:hover {
-  transform: scale(1.02);
-}
-
-/* SMALL IMAGES GRID */
+/* ── SECONDARY IMAGES (smaller, elegant) ── */
 
 .about-images {
   display: grid;
@@ -87,17 +115,13 @@
 
 .about-small-photo {
   width: 100%;
-  height: 320px;
-
-  object-fit: contain; /* 👈 NO RECORTA */
-
-  border-radius: 24px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 18px;
   display: block;
-
   background: #ffffff;
   padding: 10px;
-
-  box-shadow: 0 18px 48px rgba(18, 26, 38, 0.08);
+  box-shadow: 0 4px 18px rgba(18, 26, 38, 0.07);
   transition: transform 0.3s ease;
 }
 
@@ -105,26 +129,33 @@
   transform: scale(1.02);
 }
 
-/* RESPONSIVE */
+/* ── RESPONSIVE ── */
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .about-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-main-photo {
+    height: 340px;
+  }
+}
+
+@media (max-width: 640px) {
   .about-section {
-    padding: 40px 16px;
+    padding: 44px 16px 60px;
   }
 
   .about-header h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .about-images {
     grid-template-columns: 1fr;
   }
 
-  .about-main-photo {
-    height: 360px;
-  }
-
   .about-small-photo {
-    height: 260px;
+    height: 180px;
   }
 }

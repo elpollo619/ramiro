@@ -16,6 +16,7 @@ function ServicesPage() {
         </div>
 
         <div className="services-image-grid">
+          {/* Fensterreinigung — local photo */}
           <Link to="/dienstleistungen/fensterreinigung" className="service-card-link">
             <article className="service-image-card">
               <SmartImage
@@ -34,6 +35,7 @@ function ServicesPage() {
             </article>
           </Link>
 
+          {/* Allgemeine Reinigung — professional cleaning */}
           <Link to="/dienstleistungen/allgemeine-reinigung" className="service-card-link">
             <article className="service-image-card">
               <img
@@ -49,10 +51,11 @@ function ServicesPage() {
             </article>
           </Link>
 
+          {/* Treppenreinigung — hallway/staircase cleaning */}
           <Link to="/dienstleistungen/treppenreinigung" className="service-card-link">
             <article className="service-image-card">
               <img
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80"
+                src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1400&q=80"
                 alt={t.services.cards.stairs.title}
                 className="service-card-image"
               />
@@ -64,10 +67,11 @@ function ServicesPage() {
             </article>
           </Link>
 
+          {/* Gartenpflege — garden / green space */}
           <Link to="/dienstleistungen/gartenpflege" className="service-card-link">
             <article className="service-image-card">
               <img
-                src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1400&q=80"
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=80"
                 alt={t.services.cards.garden.title}
                 className="service-card-image"
               />
@@ -79,6 +83,7 @@ function ServicesPage() {
             </article>
           </Link>
 
+          {/* Umzugshilfe — organised move / boxes */}
           <Link to="/dienstleistungen/umzugshilfe" className="service-card-link">
             <article className="service-image-card">
               <img
@@ -94,10 +99,11 @@ function ServicesPage() {
             </article>
           </Link>
 
-          <Link to="/dienstleistungen/groessere-arbeiten" className="service-card-link">
+          {/* Grössere Arbeiten — professional team working */}
+          <Link to="/dienstleistungen/grosse-arbeiten" className="service-card-link">
             <article className="service-image-card">
               <img
-                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80"
+                src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1400&q=80"
                 alt={t.services.cards.big.title}
                 className="service-card-image"
               />

@@ -15,23 +15,33 @@ function AboutPage() {
           <p>{t.about.intro}</p>
         </div>
 
-        <div className="about-card">
-          {t.about.bio.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+        <div className="about-hero-layout">
+          <div className="about-hero-image">
+            <SmartImage
+              alt={t.about.altPortrait}
+              className="about-main-photo"
+              sources={[
+                img('ramiro-portrait.jpeg'),
+                img('images/about/ramiro-portrait.jpeg'),
+                img('about/ramiro-portrait.jpeg'),
+              ]}
+            />
+          </div>
+
+          <div className="about-hero-text">
+            {t.about.bio.slice(0, 2).map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
         </div>
 
-        <div className="about-main-image">
-          <SmartImage
-            alt={t.about.altPortrait}
-            className="about-main-photo"
-            sources={[
-              img('ramiro-portrait.jpeg'),
-              img('images/about/ramiro-portrait.jpeg'),
-              img('about/ramiro-portrait.jpeg'),
-            ]}
-          />
-        </div>
+        {t.about.bio.length > 2 && (
+          <div className="about-card">
+            {t.about.bio.slice(2).map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        )}
 
         <div className="about-images">
           <SmartImage

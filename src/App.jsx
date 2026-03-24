@@ -7,6 +7,8 @@ import ServiceDetailPage from './pages/ServiceDetailPage.jsx'
 import CateringPage from './pages/CateringPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import QuoteRequestPage from './pages/QuoteRequestPage.jsx'
+import ImpressumPage from './pages/ImpressumPage.jsx'
+import DatenschutzPage from './pages/DatenschutzPage.jsx'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="catering" element={<CateringPage />} />
         <Route path="kontakt" element={<ContactPage />} />
         <Route path="offerte" element={<QuoteRequestPage />} />
+        <Route path="impressum" element={<ImpressumPage />} />
+        <Route path="datenschutz" element={<DatenschutzPage />} />
       </Route>
     </Routes>
   )
