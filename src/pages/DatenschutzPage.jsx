@@ -18,8 +18,8 @@ function DatenschutzPage() {
           <h2>1. Verantwortliche Stelle</h2>
           <p>
             Amaya Bern Services<br />
-            [Strasse und Hausnummer]<br />
-            [PLZ] Bern, Schweiz<br />
+            Sägestrasse 10<br />
+            3097 Liebefeld, Schweiz<br />
             E-Mail: <a href="mailto:info@amayabern.ch">info@amayabern.ch</a>
           </p>
         </div>

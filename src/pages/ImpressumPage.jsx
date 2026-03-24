@@ -19,14 +19,14 @@ function ImpressumPage() {
 
           <div className="legal-block">
             <h3>Inhaber</h3>
-            <p>[Vorname Nachname des Inhabers]</p>
+            <p>Ramiro Amaya Valderrama</p>
           </div>
 
           <div className="legal-block">
             <h3>Adresse</h3>
             <p>
-              [Strasse und Hausnummer]<br />
-              [PLZ] Bern<br />
+              Sägestrasse 10<br />
+              3097 Liebefeld<br />
               Schweiz
             </p>
           </div>
@@ -41,12 +41,7 @@ function ImpressumPage() {
 
           <div className="legal-block">
             <h3>Unternehmensform</h3>
-            <p>Einzelunternehmen</p>
-          </div>
-
-          <div className="legal-block">
-            <h3>UID (Unternehmens-Identifikationsnummer)</h3>
-            <p>[CHE-XXX.XXX.XXX] – sofern vorhanden</p>
+            <p>Selbstständige Erwerbstätigkeit</p>
           </div>
         </div>
 
