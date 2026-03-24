@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import SmartImage from '../components/SmartImage'
 import { useLanguage } from '../context/LanguageContext'
+import { img } from '../utils/images'
 
 function ServicesPage() {
   const { t } = useLanguage()
@@ -21,9 +22,8 @@ function ServicesPage() {
                 alt={t.services.cards.windows.title}
                 className="service-card-image"
                 sources={[
-                  '/services/fenster-reinigung.jpeg',
-                  '/fenster-reinigung.jpeg',
-                  '/images/services/fenster-reinigung.jpeg',
+                  img('fenster-reinigung.jpeg'),
+                  img('images/services/fenster-reinigung.jpeg'),
                 ]}
               />
               <div className="service-card-content">

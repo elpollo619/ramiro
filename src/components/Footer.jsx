@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
+import { img } from '../utils/images'
 
 function Footer() {
-  const { language } = useLanguage()
+  const { t } = useLanguage()
 
   return (
     <footer className="site-footer">
@@ -10,88 +11,26 @@ function Footer() {
         <div className="footer-brand">
           <Link to="/" className="footer-logo-badge" aria-label="Amaya Bern Services">
             <img
-              src="/logo/logo-icon.png"
+              src={img('logo-icon.png')}
               alt="Amaya Bern Services"
               className="footer-brand-icon"
             />
           </Link>
 
-          <p className="footer-text">
-            {language === 'es'
-              ? 'Servicio personal de limpieza, jardinería, mudanzas y catering en Berna y alrededores.'
-              : language === 'pt'
-                ? 'Serviço pessoal de limpeza, jardinagem, mudanças e catering em Berna e arredores.'
-                : language === 'en'
-                  ? 'Personal service for cleaning, gardening, moving and catering in Bern and nearby areas.'
-                  : 'Persönlicher Service für Reinigung, Gartenpflege, Umzüge und Catering in Bern und Umgebung.'}
-          </p>
+          <p className="footer-text">{t.footer?.description}</p>
         </div>
 
         <div className="footer-nav">
-          <h4>
-            {language === 'es'
-              ? 'Navegación'
-              : language === 'pt'
-                ? 'Navegação'
-                : language === 'en'
-                  ? 'Navigation'
-                  : 'Navigation'}
-          </h4>
-
-          <Link to="/ueber-ramiro">
-            {language === 'es'
-              ? 'Sobre Ramiro'
-              : language === 'pt'
-                ? 'Sobre Ramiro'
-                : language === 'en'
-                  ? 'About Ramiro'
-                  : 'Über Ramiro'}
-          </Link>
-
-          <Link to="/dienstleistungen">
-            {language === 'es'
-              ? 'Servicios'
-              : language === 'pt'
-                ? 'Serviços'
-                : language === 'en'
-                  ? 'Services'
-                  : 'Dienstleistungen'}
-          </Link>
-
+          <h4>{t.footer?.navigation}</h4>
+          <Link to="/ueber-ramiro">{t.nav?.about}</Link>
+          <Link to="/dienstleistungen">{t.nav?.services}</Link>
           <Link to="/catering">Catering</Link>
-
-          <Link to="/kontakt">
-            {language === 'es'
-              ? 'Contacto'
-              : language === 'pt'
-                ? 'Contacto'
-                : language === 'en'
-                  ? 'Contact'
-                  : 'Kontakt'}
-          </Link>
-
-          <Link to="/offerte">
-            {language === 'es'
-              ? 'Presupuesto'
-              : language === 'pt'
-                ? 'Orçamento'
-                : language === 'en'
-                  ? 'Quote'
-                  : 'Offerte'}
-          </Link>
+          <Link to="/kontakt">{t.nav?.contact}</Link>
+          <Link to="/offerte">{t.common?.requestNow}</Link>
         </div>
 
         <div className="footer-contact">
-          <h4>
-            {language === 'es'
-              ? 'Contacto'
-              : language === 'pt'
-                ? 'Contacto'
-                : language === 'en'
-                  ? 'Contact'
-                  : 'Kontakt'}
-          </h4>
-
+          <h4>{t.footer?.contact}</h4>
           <p>Bern und Umgebung</p>
           <a href="mailto:amayabernservices@gmail.com">
             amayabernservices@gmail.com
@@ -104,6 +43,12 @@ function Footer() {
           >
             WhatsApp
           </a>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <div className="container">
+          <p>© {new Date().getFullYear()} Amaya Bern Services. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

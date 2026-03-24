@@ -1,5 +1,6 @@
 import SmartImage from '../components/SmartImage'
 import { useLanguage } from '../context/LanguageContext'
+import { img } from '../utils/images'
 
 function CateringPage() {
   const { t } = useLanguage()
@@ -18,10 +19,8 @@ function CateringPage() {
             alt={t.catering.altHero}
             className="catering-hero-image"
             sources={[
-              '/catering/catering-hero.jpeg',
-              '/catering-hero.jpeg',
-              '/hero/catering-hero.jpeg',
-              '/images/catering/catering-hero.jpeg',
+              img('catering-hero.jpeg'),
+              img('images/catering/catering-hero.jpeg'),
             ]}
           />
         </div>
@@ -37,9 +36,8 @@ function CateringPage() {
             <SmartImage
               alt="Catering 1"
               sources={[
-                '/catering/catering-1.jpeg',
-                '/catering-1.jpeg',
-                '/images/catering/catering-1.jpeg',
+                img('catering-1.jpeg'),
+                img('images/catering/catering-1.jpeg'),
               ]}
             />
           </div>
@@ -48,9 +46,8 @@ function CateringPage() {
             <SmartImage
               alt="Catering 2"
               sources={[
-                '/catering/catering-2.jpeg',
-                '/catering-2.jpeg',
-                '/images/catering/catering-2.jpeg',
+                img('catering-2.jpeg'),
+                img('images/catering/catering-2.jpeg'),
               ]}
             />
           </div>
@@ -59,9 +56,8 @@ function CateringPage() {
             <SmartImage
               alt="Catering 3"
               sources={[
-                '/catering/catering-3.jpeg',
-                '/catering-3.jpeg',
-                '/images/catering/catering-3.jpeg',
+                img('catering-3.jpeg'),
+                img('images/catering/catering-3.jpeg'),
               ]}
             />
           </div>
@@ -70,9 +66,8 @@ function CateringPage() {
             <SmartImage
               alt="Catering 4"
               sources={[
-                '/catering/catering-4.jpeg',
-                '/catering-4.jpeg',
-                '/images/catering/catering-4.jpeg',
+                img('catering-4.jpeg'),
+                img('images/catering/catering-4.jpeg'),
               ]}
             />
           </div>
@@ -81,9 +76,8 @@ function CateringPage() {
             <SmartImage
               alt="Catering 5"
               sources={[
-                '/catering/catering-5.jpeg',
-                '/catering-5.jpeg',
-                '/images/catering/catering-5.jpeg',
+                img('catering-5.jpeg'),
+                img('images/catering/catering-5.jpeg'),
               ]}
             />
           </div>
@@ -92,9 +86,8 @@ function CateringPage() {
             <SmartImage
               alt="Catering 6"
               sources={[
-                '/catering/catering-6.jpeg',
-                '/catering-6.jpeg',
-                '/images/catering/catering-6.jpeg',
+                img('catering-6.jpeg'),
+                img('images/catering/catering-6.jpeg'),
               ]}
             />
           </div>

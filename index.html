@@ -1,28 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo-icon.png" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Amaya Bern Services | Reinigung & Allroundservice</title>
-
-    <!-- SEO -->
+    <title>Amaya Bern Services – Reinigung, Gartenpflege & Catering in Bern</title>
     <meta
       name="description"
-      content="Reinigung, Gartenpflege, Umzüge und Allroundservice in Bern und Umgebung. Zuverlässig, sauber und persönlich."
+      content="Professionelle Reinigung, Gartenpflege, Umzugshilfe und Catering in Bern und Umgebung. Persönlicher Service von Ramiro Amaya – zuverlässig, flexibel und erfahren."
     />
+    <meta name="keywords" content="Reinigung Bern, Reinigungsservice Bern, Gartenpflege Bern, Catering Bern, Umzugshilfe Bern, Amaya Bern Services, Fensterreinigung Bern, Hausreinigung Bern" />
+    <meta name="author" content="Amaya Bern Services" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Theme color -->
-    <meta name="theme-color" content="#223042" />
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Amaya Bern Services – Reinigung & Allroundservices in Bern" />
+    <meta
+      property="og:description"
+      content="Professionelle Reinigung, Gartenpflege, Umzugshilfe und Catering in Bern. Persönlich, zuverlässig und erfahren."
+    />
+    <meta property="og:locale" content="de_CH" />
+    <meta property="og:site_name" content="Amaya Bern Services" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://amayabern.ch/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./logo-icon.png" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Schema.org local business structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Amaya Bern Services",
+      "description": "Professionelle Reinigung, Gartenpflege, Umzugshilfe und Catering in Bern und Umgebung.",
+      "email": "amayabernservices@gmail.com",
+      "telephone": "+41765683445",
+      "areaServed": {
+        "@type": "City",
+        "name": "Bern"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bern",
+        "addressCountry": "CH"
+      },
+      "serviceType": ["Reinigung", "Gartenpflege", "Umzugshilfe", "Catering"],
+      "priceRange": "$$"
+    }
+    </script>
   </head>
-
   <body>
-    <!-- 🔥 ESTO ES LO MÁS IMPORTANTE -->
     <div id="root"></div>
-
-    <!-- React -->
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
