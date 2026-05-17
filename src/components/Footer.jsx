@@ -11,7 +11,7 @@ function Footer() {
         <div className="footer-brand">
           <Link to="/" className="footer-logo-badge" aria-label="Amaya Bern Services">
             <img
-              src={img('logo-icon.png')}
+              src={img('logo/logo-icon.png')}
               alt="Amaya Bern Services"
               className="footer-brand-icon"
             />
