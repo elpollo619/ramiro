@@ -10,7 +10,11 @@ function ContactPage() {
     const form = e.target
     const data = new FormData(form)
 
-    fetch('https://formsubmit.co/ajax/amayabernservices@gmail.com', {
+    // TODO: confirmar que info@amayabern.ch está activado en FormSubmit
+    // antes de mergear. FormSubmit envía un correo de confirmación al
+    // recibir el primer POST a un email nuevo; hasta entonces las
+    // anfragen no llegan.
+    fetch('https://formsubmit.co/ajax/info@amayabern.ch', {
       method: 'POST',
       headers: { Accept: 'application/json' },
       body: data,
@@ -22,7 +26,7 @@ function ContactPage() {
       })
       .catch(() => {
         // fallback: open mailto
-        window.location.href = 'mailto:amayabernservices@gmail.com'
+        window.location.href = 'mailto:info@amayabern.ch'
       })
   }
 
@@ -39,8 +43,8 @@ function ContactPage() {
               <p>{t.contact.direct}</p>
               <p>
                 <strong>{t.contact.emailLabel}:</strong>{' '}
-                <a href="mailto:amayabernservices@gmail.com">
-                  amayabernservices@gmail.com
+                <a href="mailto:info@amayabern.ch">
+                  info@amayabern.ch
                 </a>
               </p>
               <p>
@@ -58,6 +62,7 @@ function ContactPage() {
                 </a>
               </p>
               <p>{t.contact.region}</p>
+              <p className="contact-language-note">{t.contact.languageNote}</p>
             </div>
           </div>
 
