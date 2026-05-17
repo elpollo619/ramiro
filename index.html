@@ -9,7 +9,6 @@
       name="description"
       content="Professionelle Reinigung, Gartenpflege, Umzugshilfe und Catering in Bern und Umgebung. Persönlicher Service von Ramiro Amaya – zuverlässig, flexibel und erfahren."
     />
-    <meta name="keywords" content="Reinigung Bern, Reinigungsservice Bern, Gartenpflege Bern, Catering Bern, Umzugshilfe Bern, Amaya Bern Services, Fensterreinigung Bern, Hausreinigung Bern" />
     <meta name="author" content="Amaya Bern Services" />
     <meta name="robots" content="index, follow" />
 
@@ -27,32 +26,99 @@
     <link rel="canonical" href="https://amayabern.ch/" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./logo-icon.png" />
+    <link rel="icon" type="image/png" href="/logo/logo-icon.png" />
 
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Schema.org local business structured data -->
+    <!-- Schema.org structured data: LocalBusiness + Services -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Amaya Bern Services",
-      "description": "Professionelle Reinigung, Gartenpflege, Umzugshilfe und Catering in Bern und Umgebung.",
-      "email": "amayabernservices@gmail.com",
-      "telephone": "+41765683445",
-      "areaServed": {
-        "@type": "City",
-        "name": "Bern"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bern",
-        "addressCountry": "CH"
-      },
-      "serviceType": ["Reinigung", "Gartenpflege", "Umzugshilfe", "Catering"],
-      "priceRange": "$$"
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://amayabern.ch/#business",
+          "name": "Amaya Bern Services",
+          "description": "Persönlicher Service für Reinigung, Gartenpflege, Umzugshilfe und Catering in Bern, Köniz und Umgebung.",
+          "url": "https://amayabern.ch/",
+          "image": "https://amayabern.ch/logo/logo-main.png",
+          "logo": "https://amayabern.ch/logo/logo-main.png",
+          "email": "info@amayabern.ch",
+          "telephone": "+41765683445",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sägestrasse 10",
+            "postalCode": "3097",
+            "addressLocality": "Köniz",
+            "addressRegion": "BE",
+            "addressCountry": "CH"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 46.9279852,
+            "longitude": 7.4151465
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "18:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "09:00",
+              "closes": "14:00"
+            }
+          ],
+          "areaServed": [
+            { "@type": "City", "name": "Bern" },
+            { "@type": "City", "name": "Köniz" },
+            { "@type": "City", "name": "Liebefeld" },
+            { "@type": "City", "name": "Wabern" },
+            { "@type": "City", "name": "Bümpliz" },
+            { "@type": "City", "name": "Ostermundigen" },
+            { "@type": "City", "name": "Muri bei Bern" },
+            { "@type": "City", "name": "Belp" },
+            { "@type": "City", "name": "Worb" },
+            { "@type": "City", "name": "Ittigen" },
+            { "@type": "City", "name": "Zollikofen" }
+          ]
+        },
+        {
+          "@type": "HousekeepingCleaningService",
+          "name": "Reinigung",
+          "url": "https://amayabern.ch/dienstleistungen/allgemeine-reinigung",
+          "provider": { "@id": "https://amayabern.ch/#business" },
+          "areaServed": { "@type": "City", "name": "Bern" }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Gartenpflege",
+          "name": "Gartenpflege",
+          "url": "https://amayabern.ch/dienstleistungen/gartenpflege",
+          "provider": { "@id": "https://amayabern.ch/#business" },
+          "areaServed": { "@type": "City", "name": "Bern" }
+        },
+        {
+          "@type": "MovingCompany",
+          "name": "Umzugshilfe",
+          "url": "https://amayabern.ch/dienstleistungen/umzugshilfe",
+          "provider": { "@id": "https://amayabern.ch/#business" },
+          "areaServed": { "@type": "City", "name": "Bern" }
+        },
+        {
+          "@type": "FoodEstablishment",
+          "additionalType": "https://schema.org/Service",
+          "name": "Catering",
+          "url": "https://amayabern.ch/catering",
+          "provider": { "@id": "https://amayabern.ch/#business" },
+          "areaServed": { "@type": "City", "name": "Bern" }
+        }
+      ]
     }
     </script>
   </head>

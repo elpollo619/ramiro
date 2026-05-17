@@ -18,10 +18,7 @@ function CateringPage() {
           <SmartImage
             alt={t.catering.altHero}
             className="catering-hero-image"
-            sources={[
-              img('catering-hero.jpeg'),
-              img('images/catering/catering-hero.jpeg'),
-            ]}
+            sources={[img('images/catering/catering-hero.jpeg')]}
           />
         </div>
 
@@ -34,61 +31,43 @@ function CateringPage() {
         <div className="gallery-grid gallery-grid-catering">
           <div className="gallery-item large">
             <SmartImage
-              alt="Catering 1"
-              sources={[
-                img('catering-1.jpeg'),
-                img('images/catering/catering-1.jpeg'),
-              ]}
+              alt="Paella und hausgemachte Speisen – Amaya Bern Services"
+              sources={[img('images/catering/catering-1.jpeg')]}
             />
           </div>
 
           <div className="gallery-item">
             <SmartImage
-              alt="Catering 2"
-              sources={[
-                img('catering-2.jpeg'),
-                img('images/catering/catering-2.jpeg'),
-              ]}
+              alt="Catering für Familienfeier in Bern"
+              sources={[img('images/catering/catering-2.jpeg')]}
             />
           </div>
 
           <div className="gallery-item">
             <SmartImage
-              alt="Catering 3"
-              sources={[
-                img('catering-3.jpeg'),
-                img('images/catering/catering-3.jpeg'),
-              ]}
+              alt="Paella-Zubereitung für Gruppen"
+              sources={[img('images/catering/catering-3.jpeg')]}
             />
           </div>
 
           <div className="gallery-item">
             <SmartImage
-              alt="Catering 4"
-              sources={[
-                img('catering-4.jpeg'),
-                img('images/catering/catering-4.jpeg'),
-              ]}
+              alt="Catering-Event in Bern"
+              sources={[img('images/catering/catering-4.jpeg')]}
             />
           </div>
 
           <div className="gallery-item">
             <SmartImage
-              alt="Catering 5"
-              sources={[
-                img('catering-5.jpeg'),
-                img('images/catering/catering-5.jpeg'),
-              ]}
+              alt="Hausgemachte Speisen für besondere Anlässe"
+              sources={[img('images/catering/catering-5.jpeg')]}
             />
           </div>
 
           <div className="gallery-item">
             <SmartImage
-              alt="Catering 6"
-              sources={[
-                img('catering-6.jpeg'),
-                img('images/catering/catering-6.jpeg'),
-              ]}
+              alt="Catering-Service in Bern und Umgebung"
+              sources={[img('images/catering/catering-6.jpeg')]}
             />
           </div>
         </div>

@@ -72,7 +72,7 @@ function ServicesPage() {
           {SERVICE_META.map((svc) => {
             const card = cards[svc.key]
             const imgSrc = svc.imgLocal
-              ? img('fenster-reinigung.jpeg')
+              ? img('images/services/fenster-reinigung.jpeg')
               : svc.imgSrc
 
             return (

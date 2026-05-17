@@ -2,7 +2,11 @@ import { useMemo, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import './QuoteRequestPage.css'
 
-const FORM_EMAIL = 'amayabernservices@gmail.com'
+// TODO: confirmar que info@amayabern.ch está activado en FormSubmit
+// antes de mergear. FormSubmit envía un correo de confirmación al
+// recibir el primer POST a un email nuevo; hasta entonces las
+// solicitudes no llegan.
+const FORM_EMAIL = 'info@amayabern.ch'
 const WHATSAPP_NUMBER = '41765683445'
 
 const SERVICE_OPTIONS = [
@@ -26,7 +30,7 @@ function getText(language) {
       servicePlaceholder: 'Dienstleistung auswählen',
       sendTitle: 'Direkt per E-Mail senden',
       note:
-        'Nach dem Absenden geht Ihre Anfrage direkt an amayabernservices@gmail.com. Sie können auch Fotos mitschicken.',
+        'Nach dem Absenden geht Ihre Anfrage direkt an info@amayabern.ch. Sie können auch Fotos mitschicken.',
       customerData: 'Kundendaten',
       workData: 'Angaben zur Arbeit',
       attachments: 'Fotos / Dateien',
@@ -108,7 +112,7 @@ function getText(language) {
       servicePlaceholder: 'Seleccione un servicio',
       sendTitle: 'Enviar directamente por correo',
       note:
-        'Al enviar el formulario, la solicitud se manda directamente a amayabernservices@gmail.com. También puede adjuntar fotos.',
+        'Al enviar el formulario, la solicitud se manda directamente a info@amayabern.ch. También puede adjuntar fotos.',
       customerData: 'Datos del cliente',
       workData: 'Datos del trabajo',
       attachments: 'Fotos / archivos',
@@ -190,7 +194,7 @@ function getText(language) {
       servicePlaceholder: 'Escolha um serviço',
       sendTitle: 'Enviar directamente por e-mail',
       note:
-        'Depois de enviar, o pedido vai directamente para amayabernservices@gmail.com. Também pode anexar fotos.',
+        'Depois de enviar, o pedido vai directamente para info@amayabern.ch. Também pode anexar fotos.',
       customerData: 'Dados do cliente',
       workData: 'Dados do trabalho',
       attachments: 'Fotos / ficheiros',
@@ -272,7 +276,7 @@ function getText(language) {
       servicePlaceholder: 'Select a service',
       sendTitle: 'Send directly by email',
       note:
-        'After submitting, the request goes directly to amayabernservices@gmail.com. You can also attach photos.',
+        'After submitting, the request goes directly to info@amayabern.ch. You can also attach photos.',
       customerData: 'Customer details',
       workData: 'Job details',
       attachments: 'Photos / files',

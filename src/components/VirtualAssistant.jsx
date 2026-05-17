@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import './VirtualAssistant.css'
 
 const WHATSAPP_NUMBER = '41765683445'
-const EMAIL_ADDRESS = 'amayabernservices@gmail.com'
+const EMAIL_ADDRESS = 'info@amayabern.ch'
 
 function normalizeText(text) {
   return text
@@ -17,7 +17,7 @@ function getTexts(language) {
       assistant: 'Assistent',
       subtitle: 'Virtueller Assistent',
       welcome:
-        'Hallo 👋 Wie kann ich Ihnen helfen? Sie können auch das Offertenformular ausfüllen, direkt an amayabernservices@gmail.com schreiben oder per WhatsApp Kontakt aufnehmen.',
+        'Hallo 👋 Wie kann ich Ihnen helfen? Sie können auch das Offertenformular ausfüllen, direkt an info@amayabern.ch schreiben oder per WhatsApp Kontakt aufnehmen.',
       placeholder: 'Ihre Nachricht schreiben...',
       send: 'Senden',
       form: 'Formular öffnen',
@@ -29,7 +29,7 @@ function getTexts(language) {
       quick5: 'Preise',
       quick6: 'Bern und Umgebung',
       fallback:
-        'Gerne helfe ich Ihnen weiter. Sie können das Offertenformular ausfüllen, direkt an amayabernservices@gmail.com schreiben oder per WhatsApp Kontakt aufnehmen.',
+        'Gerne helfe ich Ihnen weiter. Sie können das Offertenformular ausfüllen, direkt an info@amayabern.ch schreiben oder per WhatsApp Kontakt aufnehmen.',
       windows:
         'Ramiro bietet Fensterreinigung innen und aussen an. Für eine passende Offerte können Sie direkt das Formular ausfüllen.',
       general:
@@ -45,7 +45,7 @@ function getTexts(language) {
       zone:
         'Der Service ist in Bern und Umgebung verfügbar. Schreiben Sie uns Ihre Ortschaft oder füllen Sie direkt das Formular aus.',
       contact:
-        'Sie können das Formular ausfüllen, direkt an amayabernservices@gmail.com schreiben oder per WhatsApp an +41 76 568 34 45 Kontakt aufnehmen.',
+        'Sie können das Formular ausfüllen, direkt an info@amayabern.ch schreiben oder per WhatsApp an +41 76 568 34 45 Kontakt aufnehmen.',
       price:
         'Die Offerte ist unverbindlich. Der Preis hängt von der Art der Arbeit, der Grösse und dem Aufwand ab. Am besten füllen Sie das Formular mit allen Angaben aus.',
       whatsappPrefill:
@@ -56,7 +56,7 @@ function getTexts(language) {
       assistant: 'Asistente',
       subtitle: 'Asistente virtual',
       welcome:
-        'Hola 👋 ¿En qué puedo ayudarle? También puede rellenar el formulario de presupuesto, escribir directamente a amayabernservices@gmail.com o contactar por WhatsApp.',
+        'Hola 👋 ¿En qué puedo ayudarle? También puede rellenar el formulario de presupuesto, escribir directamente a info@amayabern.ch o contactar por WhatsApp.',
       placeholder: 'Escriba su mensaje...',
       send: 'Enviar',
       form: 'Abrir formulario',
@@ -68,7 +68,7 @@ function getTexts(language) {
       quick5: 'Precios',
       quick6: 'Berna y alrededores',
       fallback:
-        'Con gusto le ayudo. Puede rellenar el formulario, escribir directamente a amayabernservices@gmail.com o enviarnos un WhatsApp.',
+        'Con gusto le ayudo. Puede rellenar el formulario, escribir directamente a info@amayabern.ch o enviarnos un WhatsApp.',
       windows:
         'Ramiro ofrece limpieza de ventanas por dentro y por fuera. Para una oferta adecuada puede rellenar directamente el formulario.',
       general:
@@ -84,7 +84,7 @@ function getTexts(language) {
       zone:
         'El servicio está disponible en Berna y alrededores. Puede escribirnos su localidad o rellenar directamente el formulario.',
       contact:
-        'Puede rellenar el formulario, escribir directamente a amayabernservices@gmail.com o contactar por WhatsApp al +41 76 568 34 45.',
+        'Puede rellenar el formulario, escribir directamente a info@amayabern.ch o contactar por WhatsApp al +41 76 568 34 45.',
       price:
         'El presupuesto es sin compromiso. El precio depende del tipo de trabajo, el tamaño y el esfuerzo necesario. Lo mejor es rellenar el formulario con toda la información.',
       whatsappPrefill:
@@ -95,7 +95,7 @@ function getTexts(language) {
       assistant: 'Assistente',
       subtitle: 'Assistente virtual',
       welcome:
-        'Olá 👋 Em que posso ajudar? Também pode preencher o formulário de orçamento, escrever directamente para amayabernservices@gmail.com ou contactar por WhatsApp.',
+        'Olá 👋 Em que posso ajudar? Também pode preencher o formulário de orçamento, escrever directamente para info@amayabern.ch ou contactar por WhatsApp.',
       placeholder: 'Escreva a sua mensagem...',
       send: 'Enviar',
       form: 'Abrir formulário',
@@ -107,7 +107,7 @@ function getTexts(language) {
       quick5: 'Preços',
       quick6: 'Berna e arredores',
       fallback:
-        'Com todo o gosto ajudo. Pode preencher o formulário, escrever directamente para amayabernservices@gmail.com ou mandar mensagem por WhatsApp.',
+        'Com todo o gosto ajudo. Pode preencher o formulário, escrever directamente para info@amayabern.ch ou mandar mensagem por WhatsApp.',
       windows:
         'O Ramiro oferece limpeza de janelas por dentro e por fora. Para um orçamento adequado, pode preencher directamente o formulário.',
       general:
@@ -123,7 +123,7 @@ function getTexts(language) {
       zone:
         'O serviço está disponível em Berna e arredores. Pode escrever a sua localidade ou preencher directamente o formulário.',
       contact:
-        'Pode preencher o formulário, escrever directamente para amayabernservices@gmail.com ou contactar pelo WhatsApp para +41 76 568 34 45.',
+        'Pode preencher o formulário, escrever directamente para info@amayabern.ch ou contactar pelo WhatsApp para +41 76 568 34 45.',
       price:
         'O orçamento é sem compromisso. O preço depende do tipo de trabalho, do tamanho e do esforço necessário. O melhor é preencher o formulário com toda a informação.',
       whatsappPrefill:
@@ -134,7 +134,7 @@ function getTexts(language) {
       assistant: 'Assistant',
       subtitle: 'Virtual assistant',
       welcome:
-        'Hello 👋 How can I help you? You can also fill out the quote form, write directly to amayabernservices@gmail.com or contact us on WhatsApp.',
+        'Hello 👋 How can I help you? You can also fill out the quote form, write directly to info@amayabern.ch or contact us on WhatsApp.',
       placeholder: 'Write your message...',
       send: 'Send',
       form: 'Open form',
@@ -146,7 +146,7 @@ function getTexts(language) {
       quick5: 'Prices',
       quick6: 'Bern and surrounding area',
       fallback:
-        'I will gladly help you. You can fill out the quote form, write directly to amayabernservices@gmail.com or contact us on WhatsApp.',
+        'I will gladly help you. You can fill out the quote form, write directly to info@amayabern.ch or contact us on WhatsApp.',
       windows:
         'Ramiro offers window cleaning inside and outside. For a suitable quote, you can fill out the form directly.',
       general:
@@ -162,7 +162,7 @@ function getTexts(language) {
       zone:
         'The service is available in Bern and surrounding areas. You can write your location or fill out the form directly.',
       contact:
-        'You can fill out the form, write directly to amayabernservices@gmail.com or contact WhatsApp at +41 76 568 34 45.',
+        'You can fill out the form, write directly to info@amayabern.ch or contact WhatsApp at +41 76 568 34 45.',
       price:
         'The quote is non-binding. The price depends on the type of work, the size and the effort required. The best option is to fill out the form with all details.',
       whatsappPrefill:
@@ -173,7 +173,7 @@ function getTexts(language) {
       assistant: 'Assistant',
       subtitle: 'Assistant virtuel',
       welcome:
-        'Bonjour 👋 Comment puis-je vous aider ? Vous pouvez aussi remplir le formulaire de devis, écrire directement à amayabernservices@gmail.com ou nous contacter par WhatsApp.',
+        'Bonjour 👋 Comment puis-je vous aider ? Vous pouvez aussi remplir le formulaire de devis, écrire directement à info@amayabern.ch ou nous contacter par WhatsApp.',
       placeholder: 'Écrivez votre message...',
       send: 'Envoyer',
       form: 'Ouvrir le formulaire',
@@ -185,7 +185,7 @@ function getTexts(language) {
       quick5: 'Prix',
       quick6: 'Berne et environs',
       fallback:
-        'Je vous aide volontiers. Vous pouvez remplir le formulaire, écrire directement à amayabernservices@gmail.com ou nous contacter par WhatsApp.',
+        'Je vous aide volontiers. Vous pouvez remplir le formulaire, écrire directement à info@amayabern.ch ou nous contacter par WhatsApp.',
       windows:
         'Ramiro propose le nettoyage des fenêtres à l’intérieur et à l’extérieur. Pour un devis adapté, vous pouvez remplir directement le formulaire.',
       general:
@@ -201,7 +201,7 @@ function getTexts(language) {
       zone:
         'Le service est disponible à Berne et dans les environs. Vous pouvez nous indiquer votre localité ou remplir directement le formulaire.',
       contact:
-        'Vous pouvez remplir le formulaire, écrire directement à amayabernservices@gmail.com ou contacter WhatsApp au +41 76 568 34 45.',
+        'Vous pouvez remplir le formulaire, écrire directement à info@amayabern.ch ou contacter WhatsApp au +41 76 568 34 45.',
       price:
         'Le devis est sans engagement. Le prix dépend du type de travail, de la taille et du temps nécessaire. Le mieux est de remplir le formulaire avec toutes les informations.',
       whatsappPrefill:
@@ -212,7 +212,7 @@ function getTexts(language) {
       assistant: 'Assistente',
       subtitle: 'Assistente virtuale',
       welcome:
-        'Ciao 👋 Come posso aiutarla? Può anche compilare il modulo di preventivo, scrivere direttamente a amayabernservices@gmail.com oppure contattarci su WhatsApp.',
+        'Ciao 👋 Come posso aiutarla? Può anche compilare il modulo di preventivo, scrivere direttamente a info@amayabern.ch oppure contattarci su WhatsApp.',
       placeholder: 'Scriva il suo messaggio...',
       send: 'Inviare',
       form: 'Aprire modulo',
@@ -224,7 +224,7 @@ function getTexts(language) {
       quick5: 'Prezzi',
       quick6: 'Berna e dintorni',
       fallback:
-        'La aiuto volentieri. Può compilare il modulo, scrivere direttamente a amayabernservices@gmail.com oppure contattarci su WhatsApp.',
+        'La aiuto volentieri. Può compilare il modulo, scrivere direttamente a info@amayabern.ch oppure contattarci su WhatsApp.',
       windows:
         'Ramiro offre pulizia finestre interna ed esterna. Per un preventivo adatto, può compilare direttamente il modulo.',
       general:
@@ -240,7 +240,7 @@ function getTexts(language) {
       zone:
         'Il servizio è disponibile a Berna e dintorni. Può indicarci la sua località oppure compilare direttamente il modulo.',
       contact:
-        'Può compilare il modulo, scrivere direttamente a amayabernservices@gmail.com oppure contattare WhatsApp al +41 76 568 34 45.',
+        'Può compilare il modulo, scrivere direttamente a info@amayabern.ch oppure contattare WhatsApp al +41 76 568 34 45.',
       price:
         'Il preventivo è senza impegno. Il prezzo dipende dal tipo di lavoro, dalle dimensioni e dall’impegno necessario. La cosa migliore è compilare il modulo con tutte le informazioni.',
       whatsappPrefill:
