@@ -40,6 +40,26 @@ const translations = {
       cateringText:
         'Neben meiner Arbeit in Reinigung und Unterhalt habe ich auch langjährige Erfahrung in der Küche. Meine Spezialität sind Paellas für Familienfeste, Gruppen und Events.',
       cateringButton: 'Catering ansehen',
+      whyKicker: 'Warum Amaya',
+      whyTitle: 'Was uns besonders macht',
+      whyItems: [
+        {
+          title: 'Persönlicher Service',
+          text: 'Direkter Kontakt mit Ramiro – ohne Zwischenpersonen, ohne Call-Center.',
+        },
+        {
+          title: 'Mehrsprachig',
+          text: 'Verständigung auf Deutsch, Spanisch und Portugiesisch — schreiben Sie uns gerne in Ihrer Sprache.',
+        },
+        {
+          title: 'Flexible Termine',
+          text: 'Termine nach Absprache – auch kurzfristig oder am Wochenende.',
+        },
+        {
+          title: 'Eigene Anfahrt im Raum Bern',
+          text: 'Wir kommen zu Ihnen in Bern, Köniz und Umgebung.',
+        },
+      ],
     },
     about: {
       kicker: 'Über Ramiro',
@@ -118,6 +138,8 @@ const translations = {
       formService: 'Gewünschter Service',
       formMessage: 'Nachricht',
       send: 'Anfrage senden',
+      languageNote:
+        'Schriftliche Anfragen beantworten wir auf Deutsch, Spanisch oder Portugiesisch. Der Service vor Ort wird auf Deutsch oder Spanisch ausgeführt.',
     },
     footer: {
       description:
@@ -168,6 +190,26 @@ const translations = {
       cateringText:
         'En plus de mon travail dans le nettoyage et l"entretien, j"ai aussi une longue expérience en cuisine. Ma spécialité est la paella pour les fêtes de famille, les groupes et les événements.',
       cateringButton: 'Voir le catering',
+      whyKicker: 'Pourquoi Amaya',
+      whyTitle: 'Ce qui nous distingue',
+      whyItems: [
+        {
+          title: 'Service personnel',
+          text: 'Contact direct avec Ramiro – sans intermédiaires, sans centre d"appel.',
+        },
+        {
+          title: 'Multilingue',
+          text: 'Communication écrite en allemand, espagnol et portugais — écrivez-nous volontiers dans votre langue.',
+        },
+        {
+          title: 'Horaires flexibles',
+          text: 'Rendez-vous sur accord – également à court terme ou le week-end.',
+        },
+        {
+          title: 'Déplacement dans la région de Berne',
+          text: 'Nous nous déplaçons à Berne, Köniz et environs.',
+        },
+      ],
     },
     about: {
       kicker: 'À propos de Ramiro',
@@ -246,6 +288,8 @@ const translations = {
       formService: 'Service souhaité',
       formMessage: 'Message',
       send: 'Envoyer la demande',
+      languageNote:
+        'Nous répondons aux demandes écrites en allemand, espagnol ou portugais. Le service sur place est assuré en allemand ou en espagnol.',
     },
     footer: {
       description:
@@ -296,6 +340,26 @@ const translations = {
       cateringText:
         'Oltre al mio lavoro nella pulizia e nella manutenzione, ho anche una lunga esperienza in cucina. La mia specialità è la paella per feste di famiglia, gruppi ed eventi.',
       cateringButton: 'Vedi catering',
+      whyKicker: 'Perché Amaya',
+      whyTitle: 'Cosa ci distingue',
+      whyItems: [
+        {
+          title: 'Servizio personale',
+          text: 'Contatto diretto con Ramiro – senza intermediari, senza call-center.',
+        },
+        {
+          title: 'Multilingue',
+          text: 'Comunicazione scritta in tedesco, spagnolo e portoghese — scriveteci pure nella vostra lingua.',
+        },
+        {
+          title: 'Orari flessibili',
+          text: 'Appuntamenti su richiesta – anche a breve termine o nel weekend.',
+        },
+        {
+          title: 'Spostamento nella regione di Berna',
+          text: 'Ci spostiamo a Berna, Köniz e dintorni.',
+        },
+      ],
     },
     about: {
       kicker: 'Su Ramiro',
@@ -374,6 +438,8 @@ const translations = {
       formService: 'Servizio desiderato',
       formMessage: 'Messaggio',
       send: 'Invia richiesta',
+      languageNote:
+        'Rispondiamo alle richieste scritte in tedesco, spagnolo o portoghese. Il servizio in loco viene svolto in tedesco o in spagnolo.',
     },
     footer: {
       description:
@@ -424,6 +490,26 @@ const translations = {
       cateringText:
         'Ultra da mia lavur en nettegiar ed entreteniment hai jau era blera experientscha en cuschina. Mia spezialitad èn paellas per festas da famiglia, gruppas ed events.',
       cateringButton: 'Guardar catering',
+      whyKicker: 'Pertge Amaya',
+      whyTitle: 'Tge ans distingua',
+      whyItems: [
+        {
+          title: 'Servetsch persunal',
+          text: 'Contact direct cun Ramiro – senza persunas intermediarias, senza call-center.',
+        },
+        {
+          title: 'Pliras linguas',
+          text: 'Communicaziun en scrit en tudestg, spagnol e portugais — scrivai a nus en Vossa lingua.',
+        },
+        {
+          title: 'Termins flexibels',
+          text: 'Termins suenter cunvegna – era a curt termin u la fin d"emna.',
+        },
+        {
+          title: 'Atgna sgolada en la regiun da Berna',
+          text: 'Nus vegnin tar Vus a Berna, Köniz e conturn.',
+        },
+      ],
     },
     about: {
       kicker: 'Davart Ramiro',
@@ -502,6 +588,8 @@ const translations = {
       formService: 'Servetsch giavischà',
       formMessage: 'Messadi',
       send: 'Trametter dumonda',
+      languageNote:
+        'Nus respundain a dumondas en scrit en tudestg, spagnol u portugais. Il servetsch sin lieu vegn fatg en tudestg u spagnol.',
     },
     footer: {
       description:
@@ -552,6 +640,26 @@ const translations = {
       cateringText:
         'Además de mi trabajo en limpieza y mantenimiento, también tengo muchos años de experiencia en cocina. Mi especialidad son las paellas para fiestas familiares, grupos y eventos.',
       cateringButton: 'Ver catering',
+      whyKicker: 'Por qué Amaya',
+      whyTitle: 'Lo que nos distingue',
+      whyItems: [
+        {
+          title: 'Servicio personal',
+          text: 'Contacto directo con Ramiro – sin intermediarios, sin call-center.',
+        },
+        {
+          title: 'Varios idiomas',
+          text: 'Comunicación escrita en alemán, español y portugués — escríbanos en su idioma.',
+        },
+        {
+          title: 'Horarios flexibles',
+          text: 'Citas según acuerdo – también a corto plazo o fines de semana.',
+        },
+        {
+          title: 'Desplazamiento en la región de Berna',
+          text: 'Vamos a su domicilio en Berna, Köniz y alrededores.',
+        },
+      ],
     },
     about: {
       kicker: 'Sobre Ramiro',
@@ -630,6 +738,8 @@ const translations = {
       formService: 'Servicio deseado',
       formMessage: 'Mensaje',
       send: 'Enviar solicitud',
+      languageNote:
+        'Respondemos a las consultas escritas en alemán, español o portugués. El servicio en sitio se realiza en alemán o español.',
     },
     footer: {
       description:
@@ -680,6 +790,26 @@ const translations = {
       cateringText:
         'In addition to my work in cleaning and maintenance, I also have many years of experience in the kitchen. My specialty is paella for family celebrations, groups and events.',
       cateringButton: 'View catering',
+      whyKicker: 'Why Amaya',
+      whyTitle: 'What sets us apart',
+      whyItems: [
+        {
+          title: 'Personal service',
+          text: 'Direct contact with Ramiro – no intermediaries, no call-center.',
+        },
+        {
+          title: 'Multilingual',
+          text: 'Written communication in German, Spanish and Portuguese — feel free to write to us in your language.',
+        },
+        {
+          title: 'Flexible appointments',
+          text: 'Appointments by arrangement – also at short notice or on weekends.',
+        },
+        {
+          title: 'On-site in the Bern area',
+          text: 'We come to you in Bern, Köniz and surrounding area.',
+        },
+      ],
     },
     about: {
       kicker: 'About Ramiro',
@@ -758,6 +888,8 @@ const translations = {
       formService: 'Requested service',
       formMessage: 'Message',
       send: 'Send request',
+      languageNote:
+        'We answer written enquiries in German, Spanish or Portuguese. The on-site service is provided in German or Spanish.',
     },
     footer: {
       description:
@@ -808,6 +940,26 @@ const translations = {
       cateringText:
         'Além do meu trabalho em limpeza e manutenção, também tenho muitos anos de experiência na cozinha. A minha especialidade são paellas para festas de família, grupos e eventos.',
       cateringButton: 'Ver catering',
+      whyKicker: 'Porquê Amaya',
+      whyTitle: 'O que nos distingue',
+      whyItems: [
+        {
+          title: 'Serviço pessoal',
+          text: 'Contacto directo com Ramiro – sem intermediários, sem call-center.',
+        },
+        {
+          title: 'Multilingue',
+          text: 'Comunicação escrita em alemão, espanhol e português — escreva-nos na sua língua.',
+        },
+        {
+          title: 'Horários flexíveis',
+          text: 'Marcações por acordo – também a curto prazo ou ao fim-de-semana.',
+        },
+        {
+          title: 'Deslocação na região de Berna',
+          text: 'Vamos ter consigo em Berna, Köniz e arredores.',
+        },
+      ],
     },
     about: {
       kicker: 'Sobre Ramiro',
@@ -886,6 +1038,8 @@ const translations = {
       formService: 'Serviço pretendido',
       formMessage: 'Mensagem',
       send: 'Enviar pedido',
+      languageNote:
+        'Respondemos a pedidos escritos em alemão, espanhol ou português. O serviço no local é prestado em alemão ou espanhol.',
     },
     footer: {
       description:

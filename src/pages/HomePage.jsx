@@ -3,24 +3,6 @@ import SmartImage from '../components/SmartImage'
 import { useLanguage } from '../context/LanguageContext'
 import { img } from '../utils/images'
 
-const testimonials = [
-  {
-    text: 'Ramiro hat unsere Wohnung nach dem Auszug perfekt gereinigt. Sehr pünktlich, sorgfältig und freundlich. Ich empfehle ihn unbedingt weiter!',
-    name: 'Sandra M.',
-    location: 'Bern',
-  },
-  {
-    text: 'Wir haben Ramiro für eine Paella-Party engagiert. Das Essen war ausgezeichnet und er hat sich um alles gekümmert. Tolle Erfahrung!',
-    name: 'Thomas K.',
-    location: 'Köniz',
-  },
-  {
-    text: 'Zuverlässig, diskret und professionell. Ramiro reinigt regelmässig unser Büro und wir sind immer zufrieden. Klare Empfehlung.',
-    name: 'Miriam F.',
-    location: 'Bern',
-  },
-]
-
 function HomePage() {
   const { t } = useLanguage()
 
@@ -52,7 +34,7 @@ function HomePage() {
             <SmartImage
               alt="Ramiro Amaya"
               className="hero-main-photo"
-              sources={[img('ramiro-portrait.jpeg')]}
+              sources={[img('images/about/ramiro-portrait.jpeg')]}
             />
           </div>
         </div>
@@ -72,7 +54,7 @@ function HomePage() {
               <SmartImage
                 alt="Familie"
                 className="trust-family-photo"
-                sources={[img('family.jpeg')]}
+                sources={[img('images/about/family.jpeg')]}
               />
             </div>
 
@@ -135,25 +117,19 @@ function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
+      {/* ── WARUM AMAYA ── */}
       <section className="page-section">
         <div className="container">
           <div className="section-head">
-            <span className="modern-kicker">
-              {t.home?.testimonialsKicker || 'Kundenstimmen'}
-            </span>
-            <h2>{t.home?.testimonialsTitle || 'Was Kunden über mich sagen'}</h2>
+            <span className="modern-kicker">{t.home.whyKicker}</span>
+            <h2>{t.home.whyTitle}</h2>
           </div>
 
-          <div className="testimonials-grid">
-            {testimonials.map((item, i) => (
-              <div className="testimonial-card" key={i}>
-                <p className="testimonial-stars">★★★★★</p>
-                <p className="testimonial-text">"{item.text}"</p>
-                <div className="testimonial-author">
-                  <span className="testimonial-name">{item.name}</span>
-                  <span className="testimonial-location">{item.location}</span>
-                </div>
+          <div className="why-grid">
+            {t.home.whyItems.map((item, i) => (
+              <div className="why-card page-card" key={i}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
               </div>
             ))}
           </div>
@@ -168,7 +144,7 @@ function HomePage() {
               <SmartImage
                 alt="Catering"
                 className="catering-preview-photo"
-                sources={[img('catering-hero.jpeg')]}
+                sources={[img('images/catering/catering-hero.jpeg')]}
               />
             </div>
 
