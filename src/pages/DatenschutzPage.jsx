@@ -80,7 +80,48 @@ function DatenschutzPage() {
         </div>
 
         <div className="legal-card">
-          <h2>6. Cookies und lokale Speicherung</h2>
+          <h2>6. Google Fonts</h2>
+          <p>
+            Diese Website lädt die Schriftart «Manrope» von Google Fonts
+            (Google Ireland Ltd. / Google LLC, USA). Beim Aufruf der Website
+            stellt Ihr Browser eine direkte Verbindung zu den Servern von
+            Google her. Dabei können Ihre IP-Adresse und technische
+            Verbindungsdaten an Google übermittelt werden. Die Verarbeitung
+            erfolgt auf Grundlage unseres berechtigten Interesses an einer
+            einheitlichen Darstellung unserer Inhalte (Art. 31 Abs. 1 DSG bzw.
+            Art. 6 Abs. 1 lit. f DSGVO, soweit anwendbar). Weitere
+            Informationen finden Sie in der Datenschutzerklärung von Google
+            (policies.google.com/privacy).
+          </p>
+        </div>
+
+        <div className="legal-card">
+          <h2>7. Externe Bilder (Unsplash)</h2>
+          <p>
+            Auf einzelnen Seiten dieser Website werden Bilder vom Dienst
+            Unsplash (Unsplash Inc., Kanada / USA) eingebunden. Beim Laden
+            dieser Bilder stellt Ihr Browser eine Verbindung zu den Servern
+            von Unsplash her, wobei Ihre IP-Adresse übermittelt werden kann.
+            Eine darüber hinausgehende Verarbeitung durch Unsplash ist uns
+            nicht bekannt. Weitere Informationen finden Sie unter
+            unsplash.com/privacy.
+          </p>
+        </div>
+
+        <div className="legal-card">
+          <h2>8. Virtueller Assistent</h2>
+          <p>
+            Der virtuelle Assistent auf dieser Website ist ein einfacher
+            lokaler Chat-Hinweis, der ausschliesslich in Ihrem Browser
+            ausgeführt wird. Ihre Eingaben werden nicht an einen Server
+            übertragen, nicht gespeichert und nicht ausgewertet. Der Assistent
+            zeigt lediglich vordefinierte Antworten und leitet bei Bedarf auf
+            das Kontaktformular, die E-Mail-Adresse oder WhatsApp weiter.
+          </p>
+        </div>
+
+        <div className="legal-card">
+          <h2>9. Cookies und lokale Speicherung</h2>
           <p>
             Diese Website verwendet keine Tracking-Cookies und kein
             Analyse-Tool (z. B. Google Analytics). Im lokalen Speicher Ihres
@@ -92,7 +133,7 @@ function DatenschutzPage() {
         </div>
 
         <div className="legal-card">
-          <h2>7. Rechte der betroffenen Personen</h2>
+          <h2>10. Rechte der betroffenen Personen</h2>
           <p>
             Gemäss dem Schweizer Datenschutzgesetz (DSG) sowie der europäischen
             Datenschutz-Grundverordnung (DSGVO), sofern anwendbar, haben Sie
@@ -113,7 +154,7 @@ function DatenschutzPage() {
         </div>
 
         <div className="legal-card">
-          <h2>8. Änderungen dieser Datenschutzerklärung</h2>
+          <h2>11. Änderungen dieser Datenschutzerklärung</h2>
           <p>
             Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf
             anzupassen, um sie an geänderte Rechtslage oder bei Änderungen des
